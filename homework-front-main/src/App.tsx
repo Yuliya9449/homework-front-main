@@ -1,9 +1,13 @@
 import './App.css';
+import { HW1 } from './HW/1/HW1';
 
 export const App = () => {
   return (
     <>
-      <h1>hello</h1>
+      <HW1 />
+      {/* <HW2 /> */}
+      {/* <HW3 /> */}
+      {/* <HW4 /> */}
     </>
   );
 };
