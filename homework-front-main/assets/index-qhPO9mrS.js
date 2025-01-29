@@ -7048,10 +7048,90 @@ function requireClient() {
   return client;
 }
 var clientExports = requireClient();
+const UserList = (props) => {
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw01-users", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { children: "User List:" }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("ul", { children: props.users.map((user) => /* @__PURE__ */ jsxRuntimeExports.jsxs("li", { id: `hw01-user-${user.id}`, children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx("strong", { children: user.name }),
+      " (Age: ",
+      user.age,
+      ")",
+      /* @__PURE__ */ jsxRuntimeExports.jsx("strong", { children: " Address:" }),
+      user.address.street,
+      ", ",
+      user.address.city
+    ] }, user.id)) })
+  ] });
+};
+const HW1 = () => {
+  const users = [
+    {
+      id: 1,
+      name: "John",
+      age: 25,
+      address: { street: "123 Main St", city: "New York" }
+    },
+    {
+      id: 2,
+      name: "Alice",
+      age: 30,
+      address: { street: "456 Elm St", city: "San Francisco" }
+    },
+    {
+      id: 3,
+      name: "Bob",
+      age: 35,
+      address: { street: "789 Oak St", city: "Seattle" }
+    },
+    {
+      id: 4,
+      name: "John",
+      age: 44,
+      address: { street: "123 Maple Ave", city: "Dallas" }
+    },
+    {
+      id: 5,
+      name: "Mary",
+      age: 13,
+      address: { street: "456 Elm St", city: "Los Angeles" }
+    },
+    {
+      id: 6,
+      name: "James",
+      age: 18,
+      address: { street: "987 Pine Rd", city: "Dallas" }
+    },
+    {
+      id: 7,
+      name: "Jennifer",
+      age: 21,
+      address: { street: "654 Birch Ct", city: "Seattle" }
+    },
+    {
+      id: 8,
+      name: "Robert",
+      age: 4,
+      address: { street: "876 Spruce Way", city: "San Francisco" }
+    },
+    {
+      id: 9,
+      name: "Jessica",
+      age: 12,
+      address: { street: "543 Willow Dr", city: "San Francisco" }
+    },
+    {
+      id: 10,
+      name: "Emily",
+      age: 55,
+      address: { street: "765 Aspen Blvd", city: "Los Angeles" }
+    }
+  ];
+  return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { id: "hw01", children: /* @__PURE__ */ jsxRuntimeExports.jsx(UserList, { users }) });
+};
 const App = () => {
-  return /* @__PURE__ */ jsxRuntimeExports.jsx(jsxRuntimeExports.Fragment, { children: /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { children: "hello" }) });
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(jsxRuntimeExports.Fragment, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(HW1, {}) });
 };
 clientExports.createRoot(document.getElementById("root")).render(
   /* @__PURE__ */ jsxRuntimeExports.jsx(jsxRuntimeExports.Fragment, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(App, {}) })
 );
-//# sourceMappingURL=index-CYxvGltZ.js.map
+//# sourceMappingURL=index-qhPO9mrS.js.map
