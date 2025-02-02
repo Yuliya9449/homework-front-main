@@ -7128,10 +7128,107 @@ const HW1 = () => {
   ];
   return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { id: "hw01", children: /* @__PURE__ */ jsxRuntimeExports.jsx(UserList, { users }) });
 };
+var reactExports = requireReact();
+const CurrentUser = (props) => {
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("li", { id: `hw02-user-${props.user.id}`, children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx("strong", { children: props.user.name }),
+    " (Age: ",
+    props.user.age,
+    ")",
+    /* @__PURE__ */ jsxRuntimeExports.jsx("strong", { children: " Address: " }),
+    props.user.address.street,
+    ", ",
+    props.user.address.city
+  ] }, props.user.id);
+};
+const UserList2 = ({ users, filterUsers }) => {
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw02-users", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { children: "User List:" }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("button", { id: "hw02-filter-button", onClick: filterUsers, children: "SHOW ME FRIENDS FROM LA" }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("ul", { children: users.myFriends.map((user) => /* @__PURE__ */ jsxRuntimeExports.jsx(CurrentUser, { user }, user.id)) })
+  ] });
+};
+const HW2 = () => {
+  const users = {
+    myFriends: [
+      {
+        id: 1,
+        name: "John",
+        age: 25,
+        address: { street: "123 Main St", city: "New York" }
+      },
+      {
+        id: 2,
+        name: "Alice",
+        age: 30,
+        address: { street: "456 Elm St", city: "San Francisco" }
+      },
+      {
+        id: 3,
+        name: "Bob",
+        age: 35,
+        address: { street: "789 Oak St", city: "Seattle" }
+      },
+      {
+        id: 4,
+        name: "John",
+        age: 44,
+        address: { street: "123 Maple Ave", city: "Dallas" }
+      },
+      {
+        id: 5,
+        name: "Mary",
+        age: 13,
+        address: { street: "456 Elm St", city: "Los Angeles" }
+      },
+      {
+        id: 6,
+        name: "James",
+        age: 18,
+        address: { street: "987 Pine Rd", city: "Dallas" }
+      },
+      {
+        id: 7,
+        name: "Jennifer",
+        age: 21,
+        address: { street: "654 Birch Ct", city: "Seattle" }
+      },
+      {
+        id: 8,
+        name: "Robert",
+        age: 4,
+        address: { street: "876 Spruce Way", city: "San Francisco" }
+      },
+      {
+        id: 9,
+        name: "Jessica",
+        age: 12,
+        address: { street: "543 Willow Dr", city: "San Francisco" }
+      },
+      {
+        id: 10,
+        name: "Emily",
+        age: 55,
+        address: { street: "765 Aspen Blvd", city: "Los Angeles" }
+      }
+    ]
+  };
+  const [currentUsers, setCurrentUsers] = reactExports.useState(users);
+  const filterUsers = () => {
+    const filteredUsers = users.myFriends.filter(
+      (friend) => friend.address.city === "Los Angeles"
+    );
+    setCurrentUsers({ myFriends: filteredUsers });
+  };
+  return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { id: "hw02", children: /* @__PURE__ */ jsxRuntimeExports.jsx(UserList2, { users: currentUsers, filterUsers }) });
+};
 const App = () => {
-  return /* @__PURE__ */ jsxRuntimeExports.jsx(jsxRuntimeExports.Fragment, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(HW1, {}) });
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx(HW1, {}),
+    /* @__PURE__ */ jsxRuntimeExports.jsx(HW2, {})
+  ] });
 };
 clientExports.createRoot(document.getElementById("root")).render(
   /* @__PURE__ */ jsxRuntimeExports.jsx(jsxRuntimeExports.Fragment, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(App, {}) })
 );
-//# sourceMappingURL=index-qhPO9mrS.js.map
+//# sourceMappingURL=index-CHk5MbKo.js.map
