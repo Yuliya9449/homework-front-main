@@ -7222,13 +7222,44 @@ const HW2 = () => {
   };
   return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { id: "hw02", children: /* @__PURE__ */ jsxRuntimeExports.jsx(UserList2, { users: currentUsers, filterUsers }) });
 };
+const HW3 = () => {
+  const [currentText, setCurrentText] = reactExports.useState("");
+  const [texts, setTexts] = reactExports.useState([
+    "То, что вы делаете по ночам, то и делает вас богатым. (Аль Капоне)"
+  ]);
+  const handleChange = (event) => {
+    setCurrentText(event.currentTarget.value);
+  };
+  const handleSave = () => {
+    setTexts([...texts, currentText]);
+    setCurrentText("");
+  };
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw03", children: [
+    currentText ? /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { id: "hw03-text", children: currentText }) : /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { id: "hw03-default-text", children: "Здесь появится новое дело" }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx(
+      "input",
+      {
+        id: "hw03-input",
+        type: "text",
+        value: currentText,
+        onChange: (e) => handleChange(e)
+      }
+    ),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("button", { id: "hw03-button", onClick: handleSave, children: "Сохранить" }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { style: { marginTop: "50px" }, children: "СПИСОК ДЕЛ НА ДЕНЬ:" }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("ol", { id: "hw03-tasks", children: texts.map((el, index) => {
+      return /* @__PURE__ */ jsxRuntimeExports.jsx("li", { id: `hw03-task-${index}`, children: el }, index);
+    }) })
+  ] });
+};
 const App = () => {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx(HW1, {}),
-    /* @__PURE__ */ jsxRuntimeExports.jsx(HW2, {})
+    /* @__PURE__ */ jsxRuntimeExports.jsx(HW2, {}),
+    /* @__PURE__ */ jsxRuntimeExports.jsx(HW3, {})
   ] });
 };
 clientExports.createRoot(document.getElementById("root")).render(
   /* @__PURE__ */ jsxRuntimeExports.jsx(jsxRuntimeExports.Fragment, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(App, {}) })
 );
-//# sourceMappingURL=index-CHk5MbKo.js.map
+//# sourceMappingURL=index-DliDHjiH.js.map
