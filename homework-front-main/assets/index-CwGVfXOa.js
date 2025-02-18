@@ -7252,14 +7252,66 @@ const HW3 = () => {
     }) })
   ] });
 };
+const chetNechet = "_chetNechet_iet2v_1";
+const s = {
+  chetNechet
+};
+const Button = (props) => {
+  const callBackHandler = () => {
+    props.callBack();
+  };
+  return /* @__PURE__ */ jsxRuntimeExports.jsx("button", { id: "hw04-button", onClick: callBackHandler, children: props.name });
+};
+const Input = (props) => {
+  const onChangeHandler = (event) => {
+    props.setCurrentText(event.currentTarget.value);
+  };
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(
+    "input",
+    {
+      id: "hw04-input",
+      type: "text",
+      value: props.currentText,
+      onChange: onChangeHandler
+    }
+  );
+};
+const HW4 = () => {
+  const [currentText, setCurrentText] = reactExports.useState("");
+  const [texts, setTexts] = reactExports.useState([
+    "То, что вы делаете по ночам, то и делает вас богатым. (Аль Капоне)"
+  ]);
+  const handleSave = () => {
+    setTexts([currentText, ...texts]);
+    setCurrentText("");
+  };
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw04", children: [
+    currentText ? /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { id: "hw04-text", children: currentText }) : /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { id: "hw04-default-text", children: "Здесь появится новое дело" }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx(Input, { currentText, setCurrentText }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx(Button, { callBack: handleSave, name: "Сохранить" }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { style: { marginTop: "50px" }, children: "СПИСОК ДЕЛ НА ДЕНЬ:" }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("ol", { id: "hw04-tasks", children: texts.map((el, index) => {
+      return /* @__PURE__ */ jsxRuntimeExports.jsx(
+        "li",
+        {
+          id: `hw04-task-${index}`,
+          className: index % 2 === 0 ? s.chetNechet : "",
+          children: el
+        },
+        index
+      );
+    }) })
+  ] });
+};
 const App = () => {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx(HW1, {}),
     /* @__PURE__ */ jsxRuntimeExports.jsx(HW2, {}),
-    /* @__PURE__ */ jsxRuntimeExports.jsx(HW3, {})
+    /* @__PURE__ */ jsxRuntimeExports.jsx(HW3, {}),
+    /* @__PURE__ */ jsxRuntimeExports.jsx(HW4, {})
   ] });
 };
 clientExports.createRoot(document.getElementById("root")).render(
   /* @__PURE__ */ jsxRuntimeExports.jsx(jsxRuntimeExports.Fragment, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(App, {}) })
 );
-//# sourceMappingURL=index-DliDHjiH.js.map
+//# sourceMappingURL=index-CwGVfXOa.js.map
