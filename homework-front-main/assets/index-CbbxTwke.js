@@ -7051,7 +7051,7 @@ var clientExports = requireClient();
 const App$1 = "_App_1pjc6_3";
 const hw = "_hw_1pjc6_24";
 const hwTitle = "_hwTitle_1pjc6_30";
-const s$3 = {
+const s$5 = {
   App: App$1,
   hw,
   hwTitle
@@ -7059,20 +7059,20 @@ const s$3 = {
 const message = "_message_1k515_1";
 const imageAndText = "_imageAndText_1k515_12";
 const text = "_text_1k515_24";
-const name = "_name_1k515_52";
+const name$1 = "_name_1k515_52";
 const messageText = "_messageText_1k515_56";
 const time = "_time_1k515_60";
-const s$2 = {
+const s$4 = {
   message,
   imageAndText,
   text,
-  name,
+  name: name$1,
   messageText,
   time
 };
 const Message = (props) => {
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw1-message-" + props.message.id, className: s$2.message, children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$2.imageAndText, children: [
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw1-message-" + props.message.id, className: s$4.message, children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$4.imageAndText, children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx(
         "img",
         {
@@ -7080,22 +7080,22 @@ const Message = (props) => {
           src: props.message.user.avatar
         }
       ),
-      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$2.text, children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { id: "hw1-name-" + props.message.id, className: s$2.name, children: props.message.user.name }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("pre", { id: "hw1-text-" + props.message.id, className: s$2.messageText, children: props.message.message.text })
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$4.text, children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { id: "hw1-name-" + props.message.id, className: s$4.name, children: props.message.user.name }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("pre", { id: "hw1-text-" + props.message.id, className: s$4.messageText, children: props.message.message.text })
       ] })
     ] }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { id: "hw1-time-" + props.message.id, className: s$2.time, children: props.message.message.time })
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { id: "hw1-time-" + props.message.id, className: s$4.time, children: props.message.message.time })
   ] });
 };
 var reactExports = requireReact();
 const sendForm = "_sendForm_4le5a_1";
 const textarea = "_textarea_4le5a_9";
-const button = "_button_4le5a_42";
-const s$1 = {
+const button$1 = "_button_4le5a_42";
+const s$3 = {
   sendForm,
   textarea,
-  button
+  button: button$1
 };
 const MessageSender = (props) => {
   const M = props.M;
@@ -7130,12 +7130,12 @@ const MessageSender = (props) => {
   };
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [
     messages.map((m) => /* @__PURE__ */ jsxRuntimeExports.jsx(M, { message: m }, "message" + m.id)),
-    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw1-send-message-form", className: s$1.sendForm, children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw1-send-message-form", className: s$3.sendForm, children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx(
         "textarea",
         {
           id: "hw1-textarea",
-          className: s$1.textarea,
+          className: s$3.textarea,
           ref: textareaRef,
           title: "Shift+Enter for send",
           placeholder: "Type your message",
@@ -7148,7 +7148,7 @@ const MessageSender = (props) => {
         "button",
         {
           id: "hw1-button",
-          className: s$1.button,
+          className: s$3.button,
           onClick: addMessage,
           children: "Send"
         }
@@ -7162,7 +7162,7 @@ const friendText = "_friendText_9n20o_23";
 const friendName = "_friendName_9n20o_50";
 const friendMessageText = "_friendMessageText_9n20o_54";
 const friendTime = "_friendTime_9n20o_59";
-const s = {
+const s$2 = {
   friendMessage,
   friendImageAndText,
   friendText,
@@ -7175,9 +7175,9 @@ const FriendMessage = (props) => {
     "div",
     {
       id: "hw1-friend-message-" + props.message.id,
-      className: s.friendMessage,
+      className: s$2.friendMessage,
       children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s.friendImageAndText, children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$2.friendImageAndText, children: [
           /* @__PURE__ */ jsxRuntimeExports.jsx(
             "img",
             {
@@ -7185,12 +7185,12 @@ const FriendMessage = (props) => {
               src: props.message.user.avatar
             }
           ),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s.friendText, children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$2.friendText, children: [
             /* @__PURE__ */ jsxRuntimeExports.jsx(
               "div",
               {
                 id: "hw1-friend-name-" + props.message.id,
-                className: s.friendName,
+                className: s$2.friendName,
                 children: props.message.user.name
               }
             ),
@@ -7198,13 +7198,13 @@ const FriendMessage = (props) => {
               "pre",
               {
                 id: "hw1-friend-text-" + props.message.id,
-                className: s.friendMessageText,
+                className: s$2.friendMessageText,
                 children: props.message.message.text
               }
             )
           ] })
         ] }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { id: "hw1-friend-time-" + props.message.id, className: s.friendTime, children: props.message.message.time })
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { id: "hw1-friend-time-" + props.message.id, className: s$2.friendTime, children: props.message.message.time })
       ]
     }
   );
@@ -7242,8 +7242,8 @@ const friendMessage0 = {
 };
 const HW1 = () => {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw1", children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$3.hwTitle, children: "Homework #1" }),
-    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$3.hw, children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$5.hwTitle, children: "Homework #1" }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$5.hw, children: [
       /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx(Message, { message: message0 }),
         /* @__PURE__ */ jsxRuntimeExports.jsx(FriendMessage, { message: friendMessage0 })
@@ -7252,10 +7252,141 @@ const HW1 = () => {
     ] })
   ] });
 };
+const affair = "_affair_otgf0_1";
+const name = "_name_otgf0_10";
+const closeButton = "_closeButton_otgf0_18";
+const s$1 = {
+  affair,
+  name,
+  closeButton
+};
+const buttonContainer = "_buttonContainer_1a9zw_1";
+const all = "_all_1a9zw_7";
+const low = "_low_1a9zw_11";
+const high = "_high_1a9zw_15";
+const middle = "_middle_1a9zw_19";
+const button = "_button_1a9zw_1";
+const active = "_active_1a9zw_45";
+const affairs = "_affairs_1a9zw_50";
+const s = {
+  buttonContainer,
+  all,
+  low,
+  high,
+  middle,
+  button,
+  active,
+  affairs
+};
+function Affair(props) {
+  const deleteCallback = () => {
+    props.deleteAffairCallback(props.affair._id);
+  };
+  const nameClass = s$1.name + " " + s[props.affair.priority];
+  const buttonClass = s$1.closeButton + " " + s[props.affair.priority];
+  const affairClass = s$1.affair + " " + s[props.affair.priority];
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw2-affair-" + props.affair._id, className: affairClass, children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { id: "hw2-name-" + props.affair._id, className: nameClass, children: props.affair.name }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { id: "hw2-priority-" + props.affair._id, hidden: true, children: props.affair.priority }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx(
+      "button",
+      {
+        id: "hw2-button-delete-" + props.affair._id,
+        className: buttonClass,
+        onClick: deleteCallback,
+        children: "X"
+      }
+    )
+  ] });
+}
+function Affairs(props) {
+  const setAll = () => {
+    props.setFilter("all");
+  };
+  const setHigh = () => {
+    props.setFilter("high");
+  };
+  const setMiddle = () => {
+    props.setFilter("middle");
+  };
+  const setLow = () => {
+    props.setFilter("low");
+  };
+  const cnAll = s.button + " " + s.all + (props.filter === "all" ? " " + s.active : "");
+  const cnHigh = s.button + " " + s.high + (props.filter === "high" ? " " + s.active : "");
+  const cnMiddle = s.button + " " + s.middle + (props.filter === "middle" ? " " + s.active : "");
+  const cnLow = s.button + " " + s.low + (props.filter === "low" ? " " + s.active : "");
+  const mappedAffairs = props.data.map((a) => /* @__PURE__ */ jsxRuntimeExports.jsx(
+    Affair,
+    {
+      affair: a,
+      deleteAffairCallback: props.deleteAffairCallback
+    },
+    a._id
+  ));
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s.buttonContainer, children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx("button", { id: "hw2-button-all", onClick: setAll, className: cnAll, children: "All" }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("button", { id: "hw2-button-high", onClick: setHigh, className: cnHigh, children: "High" }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(
+        "button",
+        {
+          id: "hw2-button-middle",
+          onClick: setMiddle,
+          className: cnMiddle,
+          children: "Middle"
+        }
+      ),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("button", { id: "hw2-button-low", onClick: setLow, className: cnLow, children: "Low" })
+    ] }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s.affairs, children: mappedAffairs })
+  ] });
+}
+const defaultAffairs = [
+  // need to fix any
+  { _id: 1, name: "React", priority: "high" },
+  // студенты могут изменить содержимое name и количество элементов в массиве, ...priority не менять!
+  { _id: 2, name: "anime", priority: "low" },
+  { _id: 3, name: "games", priority: "low" },
+  { _id: 4, name: "work", priority: "high" },
+  { _id: 5, name: "html & css", priority: "middle" }
+];
+const filterAffairs = (affairs2, filter) => {
+  if (filter === "all") {
+    return [...affairs2];
+  }
+  return affairs2.filter((a) => a.priority === filter);
+};
+const deleteAffair = (affairs2, _id) => {
+  return affairs2.filter((a) => a._id !== _id);
+};
+function HW2() {
+  const [affairs2, setAffairs] = reactExports.useState(defaultAffairs);
+  const [filter, setFilter] = reactExports.useState("all");
+  const filteredAffairs = filterAffairs(affairs2, filter);
+  const deleteAffairCallback = (_id) => {
+    setAffairs((prevState) => deleteAffair(prevState, _id));
+  };
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw2", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$5.hwTitle, children: "Homework #2" }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$5.hw, children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+      Affairs,
+      {
+        data: filteredAffairs,
+        setFilter,
+        deleteAffairCallback,
+        filter
+      }
+    ) })
+  ] });
+}
 function App() {
-  return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$3.App, children: /* @__PURE__ */ jsxRuntimeExports.jsx(HW1, {}) });
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$5.App, children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx(HW1, {}),
+    /* @__PURE__ */ jsxRuntimeExports.jsx(HW2, {})
+  ] });
 }
 clientExports.createRoot(document.getElementById("root")).render(
   /* @__PURE__ */ jsxRuntimeExports.jsx(jsxRuntimeExports.Fragment, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(App, {}) })
 );
-//# sourceMappingURL=index-C_nCm2sv.js.map
+//# sourceMappingURL=index-CbbxTwke.js.map

@@ -302,4 +302,89 @@ button:focus-visible {
   line-height: 12px;
 
   margin-left: 10px;
+}._affair_otgf0_1 {
+    display: flex;
+    align-items: center;
+    width: 185px;
+
+    border: 1.5px solid var(--color);
+    border-radius: 5px;
+}
+
+._name_otgf0_10 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 145px;
+    height: 37px;
+}
+
+._closeButton_otgf0_18 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 37px;
+
+    background-color: transparent;
+    border: none;
+    border-left: 1.5px solid var(--color);
+
+    font-weight: 900;
+    cursor: pointer;
+}
+._buttonContainer_1a9zw_1 {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+._all_1a9zw_7 {
+  --color: #06c;
+}
+
+._low_1a9zw_11 {
+  --color: #0c2;
+}
+
+._high_1a9zw_15 {
+  --color: #c00;
+}
+
+._middle_1a9zw_19 {
+  --color: #cc9c00;
+}
+
+._button_1a9zw_1 {
+  padding: 5px 15px;
+
+  background: transparent;
+  color: var(--color);
+
+  border: 1px solid var(--color);
+  border-radius: 15px;
+  outline: none;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+._button_1a9zw_1:active {
+  background: var(--color);
+  color: white;
+}
+
+._active_1a9zw_45 {
+  background: var(--color);
+  color: white;
+}
+
+._affairs_1a9zw_50 {
+  display: flex;
+  gap: 17px;
+  flex-wrap: wrap;
+  max-width: 450px;
 }
