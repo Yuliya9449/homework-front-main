@@ -7048,270 +7048,214 @@ function requireClient() {
   return client;
 }
 var clientExports = requireClient();
-const UserList = (props) => {
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw01-users", children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { children: "User List:" }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx("ul", { children: props.users.map((user) => /* @__PURE__ */ jsxRuntimeExports.jsxs("li", { id: `hw01-user-${user.id}`, children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx("strong", { children: user.name }),
-      " (Age: ",
-      user.age,
-      ")",
-      /* @__PURE__ */ jsxRuntimeExports.jsx("strong", { children: " Address:" }),
-      user.address.street,
-      ", ",
-      user.address.city
-    ] }, user.id)) })
-  ] });
+const App$1 = "_App_1pjc6_3";
+const hw = "_hw_1pjc6_24";
+const hwTitle = "_hwTitle_1pjc6_30";
+const s$3 = {
+  App: App$1,
+  hw,
+  hwTitle
 };
-const HW1 = () => {
-  const users = [
-    {
-      id: 1,
-      name: "John",
-      age: 25,
-      address: { street: "123 Main St", city: "New York" }
-    },
-    {
-      id: 2,
-      name: "Alice",
-      age: 30,
-      address: { street: "456 Elm St", city: "San Francisco" }
-    },
-    {
-      id: 3,
-      name: "Bob",
-      age: 35,
-      address: { street: "789 Oak St", city: "Seattle" }
-    },
-    {
-      id: 4,
-      name: "John",
-      age: 44,
-      address: { street: "123 Maple Ave", city: "Dallas" }
-    },
-    {
-      id: 5,
-      name: "Mary",
-      age: 13,
-      address: { street: "456 Elm St", city: "Los Angeles" }
-    },
-    {
-      id: 6,
-      name: "James",
-      age: 18,
-      address: { street: "987 Pine Rd", city: "Dallas" }
-    },
-    {
-      id: 7,
-      name: "Jennifer",
-      age: 21,
-      address: { street: "654 Birch Ct", city: "Seattle" }
-    },
-    {
-      id: 8,
-      name: "Robert",
-      age: 4,
-      address: { street: "876 Spruce Way", city: "San Francisco" }
-    },
-    {
-      id: 9,
-      name: "Jessica",
-      age: 12,
-      address: { street: "543 Willow Dr", city: "San Francisco" }
-    },
-    {
-      id: 10,
-      name: "Emily",
-      age: 55,
-      address: { street: "765 Aspen Blvd", city: "Los Angeles" }
-    }
-  ];
-  return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { id: "hw01", children: /* @__PURE__ */ jsxRuntimeExports.jsx(UserList, { users }) });
+const message = "_message_1k515_1";
+const imageAndText = "_imageAndText_1k515_12";
+const text = "_text_1k515_24";
+const name = "_name_1k515_52";
+const messageText = "_messageText_1k515_56";
+const time = "_time_1k515_60";
+const s$2 = {
+  message,
+  imageAndText,
+  text,
+  name,
+  messageText,
+  time
+};
+const Message = (props) => {
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw1-message-" + props.message.id, className: s$2.message, children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$2.imageAndText, children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx(
+        "img",
+        {
+          id: "hw1-avatar-" + props.message.id,
+          src: props.message.user.avatar
+        }
+      ),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$2.text, children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { id: "hw1-name-" + props.message.id, className: s$2.name, children: props.message.user.name }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("pre", { id: "hw1-text-" + props.message.id, className: s$2.messageText, children: props.message.message.text })
+      ] })
+    ] }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { id: "hw1-time-" + props.message.id, className: s$2.time, children: props.message.message.time })
+  ] });
 };
 var reactExports = requireReact();
-const CurrentUser = (props) => {
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs("li", { id: `hw02-user-${props.user.id}`, children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsx("strong", { children: props.user.name }),
-    " (Age: ",
-    props.user.age,
-    ")",
-    /* @__PURE__ */ jsxRuntimeExports.jsx("strong", { children: " Address: " }),
-    props.user.address.street,
-    ", ",
-    props.user.address.city
-  ] }, props.user.id);
+const sendForm = "_sendForm_4le5a_1";
+const textarea = "_textarea_4le5a_9";
+const button = "_button_4le5a_42";
+const s$1 = {
+  sendForm,
+  textarea,
+  button
 };
-const UserList2 = ({ users, filterUsers }) => {
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw02-users", children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { children: "User List:" }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx("button", { id: "hw02-filter-button", onClick: filterUsers, children: "SHOW ME FRIENDS FROM LA" }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx("ul", { children: users.myFriends.map((user) => /* @__PURE__ */ jsxRuntimeExports.jsx(CurrentUser, { user }, user.id)) })
+const MessageSender = (props) => {
+  const M = props.M;
+  const textareaRef = reactExports.useRef(null);
+  const [messages, setMessages] = reactExports.useState([]);
+  const [text2, setText] = reactExports.useState("");
+  const onChange = (e) => {
+    setText(e.currentTarget.value);
+  };
+  reactExports.useEffect(() => {
+    if (textareaRef == null ? void 0 : textareaRef.current) {
+      textareaRef.current.style.height = "0px";
+      textareaRef.current.style.height = textareaRef.current.scrollHeight + "px";
+    }
+  }, [text2]);
+  const addMessage = () => {
+    setMessages([
+      ...messages,
+      {
+        id: messages.length ? messages.length + 1 : 1,
+        user: message0.user,
+        message: {
+          text: text2,
+          time: (/* @__PURE__ */ new Date()).toTimeString().slice(0, 5)
+        }
+      }
+    ]);
+    setTimeout(() => setText(""), 4);
+  };
+  const onKeyDown = (e) => {
+    e.key === "Enter" && e.shiftKey && addMessage();
+  };
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [
+    messages.map((m) => /* @__PURE__ */ jsxRuntimeExports.jsx(M, { message: m }, "message" + m.id)),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw1-send-message-form", className: s$1.sendForm, children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx(
+        "textarea",
+        {
+          id: "hw1-textarea",
+          className: s$1.textarea,
+          ref: textareaRef,
+          title: "Shift+Enter for send",
+          placeholder: "Type your message",
+          value: text2,
+          onChange,
+          onKeyDown
+        }
+      ),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(
+        "button",
+        {
+          id: "hw1-button",
+          className: s$1.button,
+          onClick: addMessage,
+          children: "Send"
+        }
+      )
+    ] })
   ] });
 };
-const HW2 = () => {
-  const users = {
-    myFriends: [
-      {
-        id: 1,
-        name: "John",
-        age: 25,
-        address: { street: "123 Main St", city: "New York" }
-      },
-      {
-        id: 2,
-        name: "Alice",
-        age: 30,
-        address: { street: "456 Elm St", city: "San Francisco" }
-      },
-      {
-        id: 3,
-        name: "Bob",
-        age: 35,
-        address: { street: "789 Oak St", city: "Seattle" }
-      },
-      {
-        id: 4,
-        name: "John",
-        age: 44,
-        address: { street: "123 Maple Ave", city: "Dallas" }
-      },
-      {
-        id: 5,
-        name: "Mary",
-        age: 13,
-        address: { street: "456 Elm St", city: "Los Angeles" }
-      },
-      {
-        id: 6,
-        name: "James",
-        age: 18,
-        address: { street: "987 Pine Rd", city: "Dallas" }
-      },
-      {
-        id: 7,
-        name: "Jennifer",
-        age: 21,
-        address: { street: "654 Birch Ct", city: "Seattle" }
-      },
-      {
-        id: 8,
-        name: "Robert",
-        age: 4,
-        address: { street: "876 Spruce Way", city: "San Francisco" }
-      },
-      {
-        id: 9,
-        name: "Jessica",
-        age: 12,
-        address: { street: "543 Willow Dr", city: "San Francisco" }
-      },
-      {
-        id: 10,
-        name: "Emily",
-        age: 55,
-        address: { street: "765 Aspen Blvd", city: "Los Angeles" }
-      }
-    ]
-  };
-  const [currentUsers, setCurrentUsers] = reactExports.useState(users);
-  const filterUsers = () => {
-    const filteredUsers = users.myFriends.filter(
-      (friend) => friend.address.city === "Los Angeles"
-    );
-    setCurrentUsers({ myFriends: filteredUsers });
-  };
-  return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { id: "hw02", children: /* @__PURE__ */ jsxRuntimeExports.jsx(UserList2, { users: currentUsers, filterUsers }) });
-};
-const HW3 = () => {
-  const [currentText, setCurrentText] = reactExports.useState("");
-  const [texts, setTexts] = reactExports.useState([
-    "То, что вы делаете по ночам, то и делает вас богатым. (Аль Капоне)"
-  ]);
-  const handleChange = (event) => {
-    setCurrentText(event.currentTarget.value);
-  };
-  const handleSave = () => {
-    setTexts([...texts, currentText]);
-    setCurrentText("");
-  };
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw03", children: [
-    currentText ? /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { id: "hw03-text", children: currentText }) : /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { id: "hw03-default-text", children: "Здесь появится новое дело" }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx(
-      "input",
-      {
-        id: "hw03-input",
-        type: "text",
-        value: currentText,
-        onChange: (e) => handleChange(e)
-      }
-    ),
-    /* @__PURE__ */ jsxRuntimeExports.jsx("button", { id: "hw03-button", onClick: handleSave, children: "Сохранить" }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { style: { marginTop: "50px" }, children: "СПИСОК ДЕЛ НА ДЕНЬ:" }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx("ol", { id: "hw03-tasks", children: texts.map((el, index) => {
-      return /* @__PURE__ */ jsxRuntimeExports.jsx("li", { id: `hw03-task-${index}`, children: el }, index);
-    }) })
-  ] });
-};
-const chetNechet = "_chetNechet_iet2v_1";
+const friendMessage = "_friendMessage_9n20o_1";
+const friendImageAndText = "_friendImageAndText_9n20o_11";
+const friendText = "_friendText_9n20o_23";
+const friendName = "_friendName_9n20o_50";
+const friendMessageText = "_friendMessageText_9n20o_54";
+const friendTime = "_friendTime_9n20o_59";
 const s = {
-  chetNechet
+  friendMessage,
+  friendImageAndText,
+  friendText,
+  friendName,
+  friendMessageText,
+  friendTime
 };
-const Button = (props) => {
-  const callBackHandler = () => {
-    props.callBack();
-  };
-  return /* @__PURE__ */ jsxRuntimeExports.jsx("button", { id: "hw04-button", onClick: callBackHandler, children: props.name });
-};
-const Input = (props) => {
-  const onChangeHandler = (event) => {
-    props.setCurrentText(event.currentTarget.value);
-  };
-  return /* @__PURE__ */ jsxRuntimeExports.jsx(
-    "input",
+const FriendMessage = (props) => {
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs(
+    "div",
     {
-      id: "hw04-input",
-      type: "text",
-      value: props.currentText,
-      onChange: onChangeHandler
+      id: "hw1-friend-message-" + props.message.id,
+      className: s.friendMessage,
+      children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s.friendImageAndText, children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(
+            "img",
+            {
+              id: "hw1-friend-avatar-" + props.message.id,
+              src: props.message.user.avatar
+            }
+          ),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s.friendText, children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(
+              "div",
+              {
+                id: "hw1-friend-name-" + props.message.id,
+                className: s.friendName,
+                children: props.message.user.name
+              }
+            ),
+            /* @__PURE__ */ jsxRuntimeExports.jsx(
+              "pre",
+              {
+                id: "hw1-friend-text-" + props.message.id,
+                className: s.friendMessageText,
+                children: props.message.message.text
+              }
+            )
+          ] })
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { id: "hw1-friend-time-" + props.message.id, className: s.friendTime, children: props.message.message.time })
+      ]
     }
   );
 };
-const HW4 = () => {
-  const [currentText, setCurrentText] = reactExports.useState("");
-  const [texts, setTexts] = reactExports.useState([
-    "То, что вы делаете по ночам, то и делает вас богатым. (Аль Капоне)"
-  ]);
-  const handleSave = () => {
-    setTexts([currentText, ...texts]);
-    setCurrentText("");
-  };
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw04", children: [
-    currentText ? /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { id: "hw04-text", children: currentText }) : /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { id: "hw04-default-text", children: "Здесь появится новое дело" }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx(Input, { currentText, setCurrentText }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx(Button, { callBack: handleSave, name: "Сохранить" }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { style: { marginTop: "50px" }, children: "СПИСОК ДЕЛ НА ДЕНЬ:" }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx("ol", { id: "hw04-tasks", children: texts.map((el, index) => {
-      return /* @__PURE__ */ jsxRuntimeExports.jsx(
-        "li",
-        {
-          id: `hw04-task-${index}`,
-          className: index % 2 === 0 ? s.chetNechet : "",
-          children: el
-        },
-        index
-      );
-    }) })
+const avatar = "" + new URL("avatar-DPJDfvAV.png", import.meta.url).href;
+const message0 = {
+  id: 0,
+  user: {
+    avatar,
+    // можно менять
+    name: "Ivan"
+    // можно менять
+  },
+  message: {
+    text: "Hello, she didn’t do anything and rested all day, how are you?",
+    // можно менять
+    time: "09:01"
+    // можно менять
+  }
+};
+const friendMessage0 = {
+  id: 100,
+  user: {
+    avatar,
+    // можно менять
+    name: "Petr"
+    // можно менять
+  },
+  message: {
+    text: "Hello, how are you, what did you do yesterday?",
+    // можно менять
+    time: "22:00"
+    // можно менять
+  }
+};
+const HW1 = () => {
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw1", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$3.hwTitle, children: "Homework #1" }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$3.hw, children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Message, { message: message0 }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(FriendMessage, { message: friendMessage0 })
+      ] }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(MessageSender, { M: Message })
+    ] })
   ] });
 };
-const App = () => {
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsx(HW1, {}),
-    /* @__PURE__ */ jsxRuntimeExports.jsx(HW2, {}),
-    /* @__PURE__ */ jsxRuntimeExports.jsx(HW3, {}),
-    /* @__PURE__ */ jsxRuntimeExports.jsx(HW4, {})
-  ] });
-};
+function App() {
+  return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$3.App, children: /* @__PURE__ */ jsxRuntimeExports.jsx(HW1, {}) });
+}
 clientExports.createRoot(document.getElementById("root")).render(
   /* @__PURE__ */ jsxRuntimeExports.jsx(jsxRuntimeExports.Fragment, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(App, {}) })
 );
-//# sourceMappingURL=index-CwGVfXOa.js.map
+//# sourceMappingURL=index-C_nCm2sv.js.map
