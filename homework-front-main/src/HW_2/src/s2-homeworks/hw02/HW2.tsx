@@ -61,7 +61,7 @@ export const deleteAffair = (
   return affairs.filter((a) => a._id !== _id);
 };
 
-function HW2() {
+export function HW2() {
   const [affairs, setAffairs] = useState<AffairType[]>(defaultAffairs); // need to fix any
   const [filter, setFilter] = useState<FilterType>('all');
 
@@ -87,5 +87,3 @@ function HW2() {
     </div>
   );
 }
-
-export default HW2;

@@ -21,7 +21,7 @@ export const pureAddUserCallback = (
   setUsers([...users, user]);
 };
 
-const HW3 = () => {
+export const HW3 = () => {
   const [users, setUsers] = useState<UserType[]>([]);
 
   const addUserCallback = (name: UserType['name']) => {
@@ -39,5 +39,3 @@ const HW3 = () => {
     </div>
   );
 };
-
-export default HW3;

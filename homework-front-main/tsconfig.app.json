@@ -24,11 +24,5 @@
 
     "types": ["vitest/globals"]
   },
-  "include": [
-    "src",
-    "HW_2/src/s1-main/",
-    "HW_2/src/s2-homeworks/hw01/",
-    "HW_2/src/s2-homeworks/hw02/",
-    "HW_2/src/s2-homeworks/hw03/"
-  ]
+  "include": ["src"]
 }
