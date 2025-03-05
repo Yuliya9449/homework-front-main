@@ -7048,31 +7048,31 @@ function requireClient() {
   return client;
 }
 var clientExports = requireClient();
-const App$1 = "_App_1pjc6_3";
-const hw = "_hw_1pjc6_24";
-const hwTitle = "_hwTitle_1pjc6_30";
-const s$5 = {
+const App$1 = "_App_t5hlw_3";
+const hw = "_hw_t5hlw_27";
+const hwTitle = "_hwTitle_t5hlw_33";
+const s$6 = {
   App: App$1,
   hw,
   hwTitle
 };
 const message = "_message_1k515_1";
 const imageAndText = "_imageAndText_1k515_12";
-const text = "_text_1k515_24";
+const text$1 = "_text_1k515_24";
 const name$1 = "_name_1k515_52";
 const messageText = "_messageText_1k515_56";
 const time = "_time_1k515_60";
-const s$4 = {
+const s$5 = {
   message,
   imageAndText,
-  text,
+  text: text$1,
   name: name$1,
   messageText,
   time
 };
 const Message = (props) => {
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw1-message-" + props.message.id, className: s$4.message, children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$4.imageAndText, children: [
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw1-message-" + props.message.id, className: s$5.message, children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$5.imageAndText, children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx(
         "img",
         {
@@ -7080,22 +7080,22 @@ const Message = (props) => {
           src: props.message.user.avatar
         }
       ),
-      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$4.text, children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { id: "hw1-name-" + props.message.id, className: s$4.name, children: props.message.user.name }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("pre", { id: "hw1-text-" + props.message.id, className: s$4.messageText, children: props.message.message.text })
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$5.text, children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { id: "hw1-name-" + props.message.id, className: s$5.name, children: props.message.user.name }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("pre", { id: "hw1-text-" + props.message.id, className: s$5.messageText, children: props.message.message.text })
       ] })
     ] }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { id: "hw1-time-" + props.message.id, className: s$4.time, children: props.message.message.time })
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { id: "hw1-time-" + props.message.id, className: s$5.time, children: props.message.message.time })
   ] });
 };
 var reactExports = requireReact();
 const sendForm = "_sendForm_4le5a_1";
 const textarea = "_textarea_4le5a_9";
-const button$1 = "_button_4le5a_42";
-const s$3 = {
+const button$2 = "_button_4le5a_42";
+const s$4 = {
   sendForm,
   textarea,
-  button: button$1
+  button: button$2
 };
 const MessageSender = (props) => {
   const M = props.M;
@@ -7130,12 +7130,12 @@ const MessageSender = (props) => {
   };
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [
     messages.map((m) => /* @__PURE__ */ jsxRuntimeExports.jsx(M, { message: m }, "message" + m.id)),
-    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw1-send-message-form", className: s$3.sendForm, children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw1-send-message-form", className: s$4.sendForm, children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx(
         "textarea",
         {
           id: "hw1-textarea",
-          className: s$3.textarea,
+          className: s$4.textarea,
           ref: textareaRef,
           title: "Shift+Enter for send",
           placeholder: "Type your message",
@@ -7148,7 +7148,7 @@ const MessageSender = (props) => {
         "button",
         {
           id: "hw1-button",
-          className: s$3.button,
+          className: s$4.button,
           onClick: addMessage,
           children: "Send"
         }
@@ -7162,7 +7162,7 @@ const friendText = "_friendText_9n20o_23";
 const friendName = "_friendName_9n20o_50";
 const friendMessageText = "_friendMessageText_9n20o_54";
 const friendTime = "_friendTime_9n20o_59";
-const s$2 = {
+const s$3 = {
   friendMessage,
   friendImageAndText,
   friendText,
@@ -7175,9 +7175,9 @@ const FriendMessage = (props) => {
     "div",
     {
       id: "hw1-friend-message-" + props.message.id,
-      className: s$2.friendMessage,
+      className: s$3.friendMessage,
       children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$2.friendImageAndText, children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$3.friendImageAndText, children: [
           /* @__PURE__ */ jsxRuntimeExports.jsx(
             "img",
             {
@@ -7185,12 +7185,12 @@ const FriendMessage = (props) => {
               src: props.message.user.avatar
             }
           ),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$2.friendText, children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$3.friendText, children: [
             /* @__PURE__ */ jsxRuntimeExports.jsx(
               "div",
               {
                 id: "hw1-friend-name-" + props.message.id,
-                className: s$2.friendName,
+                className: s$3.friendName,
                 children: props.message.user.name
               }
             ),
@@ -7198,13 +7198,13 @@ const FriendMessage = (props) => {
               "pre",
               {
                 id: "hw1-friend-text-" + props.message.id,
-                className: s$2.friendMessageText,
+                className: s$3.friendMessageText,
                 children: props.message.message.text
               }
             )
           ] })
         ] }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { id: "hw1-friend-time-" + props.message.id, className: s$2.friendTime, children: props.message.message.time })
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { id: "hw1-friend-time-" + props.message.id, className: s$3.friendTime, children: props.message.message.time })
       ]
     }
   );
@@ -7242,8 +7242,8 @@ const friendMessage0 = {
 };
 const HW1 = () => {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw1", children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$5.hwTitle, children: "Homework #1" }),
-    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$5.hw, children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$6.hwTitle, children: "Homework #1" }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$6.hw, children: [
       /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx(Message, { message: message0 }),
         /* @__PURE__ */ jsxRuntimeExports.jsx(FriendMessage, { message: friendMessage0 })
@@ -7255,7 +7255,7 @@ const HW1 = () => {
 const affair = "_affair_otgf0_1";
 const name = "_name_otgf0_10";
 const closeButton = "_closeButton_otgf0_18";
-const s$1 = {
+const s$2 = {
   affair,
   name,
   closeButton
@@ -7265,16 +7265,16 @@ const all = "_all_1a9zw_7";
 const low = "_low_1a9zw_11";
 const high = "_high_1a9zw_15";
 const middle = "_middle_1a9zw_19";
-const button = "_button_1a9zw_1";
+const button$1 = "_button_1a9zw_1";
 const active = "_active_1a9zw_45";
 const affairs = "_affairs_1a9zw_50";
-const s = {
+const s$1 = {
   buttonContainer,
   all,
   low,
   high,
   middle,
-  button,
+  button: button$1,
   active,
   affairs
 };
@@ -7282,9 +7282,9 @@ function Affair(props) {
   const deleteCallback = () => {
     props.deleteAffairCallback(props.affair._id);
   };
-  const nameClass = s$1.name + " " + s[props.affair.priority];
-  const buttonClass = s$1.closeButton + " " + s[props.affair.priority];
-  const affairClass = s$1.affair + " " + s[props.affair.priority];
+  const nameClass = s$2.name + " " + s$1[props.affair.priority];
+  const buttonClass = s$2.closeButton + " " + s$1[props.affair.priority];
+  const affairClass = s$2.affair + " " + s$1[props.affair.priority];
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw2-affair-" + props.affair._id, className: affairClass, children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx("div", { id: "hw2-name-" + props.affair._id, className: nameClass, children: props.affair.name }),
     /* @__PURE__ */ jsxRuntimeExports.jsx("div", { id: "hw2-priority-" + props.affair._id, hidden: true, children: props.affair.priority }),
@@ -7312,10 +7312,10 @@ function Affairs(props) {
   const setLow = () => {
     props.setFilter("low");
   };
-  const cnAll = s.button + " " + s.all + (props.filter === "all" ? " " + s.active : "");
-  const cnHigh = s.button + " " + s.high + (props.filter === "high" ? " " + s.active : "");
-  const cnMiddle = s.button + " " + s.middle + (props.filter === "middle" ? " " + s.active : "");
-  const cnLow = s.button + " " + s.low + (props.filter === "low" ? " " + s.active : "");
+  const cnAll = s$1.button + " " + s$1.all + (props.filter === "all" ? " " + s$1.active : "");
+  const cnHigh = s$1.button + " " + s$1.high + (props.filter === "high" ? " " + s$1.active : "");
+  const cnMiddle = s$1.button + " " + s$1.middle + (props.filter === "middle" ? " " + s$1.active : "");
+  const cnLow = s$1.button + " " + s$1.low + (props.filter === "low" ? " " + s$1.active : "");
   const mappedAffairs = props.data.map((a) => /* @__PURE__ */ jsxRuntimeExports.jsx(
     Affair,
     {
@@ -7325,7 +7325,7 @@ function Affairs(props) {
     a._id
   ));
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s.buttonContainer, children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$1.buttonContainer, children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx("button", { id: "hw2-button-all", onClick: setAll, className: cnAll, children: "All" }),
       /* @__PURE__ */ jsxRuntimeExports.jsx("button", { id: "hw2-button-high", onClick: setHigh, className: cnHigh, children: "High" }),
       /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -7339,7 +7339,7 @@ function Affairs(props) {
       ),
       /* @__PURE__ */ jsxRuntimeExports.jsx("button", { id: "hw2-button-low", onClick: setLow, className: cnLow, children: "Low" })
     ] }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s.affairs, children: mappedAffairs })
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$1.affairs, children: mappedAffairs })
   ] });
 }
 const defaultAffairs = [
@@ -7368,8 +7368,8 @@ function HW2() {
     setAffairs((prevState) => deleteAffair(prevState, _id));
   };
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw2", children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$5.hwTitle, children: "Homework #2" }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$5.hw, children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$6.hwTitle, children: "Homework #2" }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$6.hw, children: /* @__PURE__ */ jsxRuntimeExports.jsx(
       Affairs,
       {
         data: filteredAffairs,
@@ -7380,13 +7380,240 @@ function HW2() {
     ) })
   ] });
 }
+const byteToHex = [];
+for (let i = 0; i < 256; ++i) {
+  byteToHex.push((i + 256).toString(16).slice(1));
+}
+function unsafeStringify(arr, offset = 0) {
+  return (byteToHex[arr[offset + 0]] + byteToHex[arr[offset + 1]] + byteToHex[arr[offset + 2]] + byteToHex[arr[offset + 3]] + "-" + byteToHex[arr[offset + 4]] + byteToHex[arr[offset + 5]] + "-" + byteToHex[arr[offset + 6]] + byteToHex[arr[offset + 7]] + "-" + byteToHex[arr[offset + 8]] + byteToHex[arr[offset + 9]] + "-" + byteToHex[arr[offset + 10]] + byteToHex[arr[offset + 11]] + byteToHex[arr[offset + 12]] + byteToHex[arr[offset + 13]] + byteToHex[arr[offset + 14]] + byteToHex[arr[offset + 15]]).toLowerCase();
+}
+let getRandomValues;
+const rnds8 = new Uint8Array(16);
+function rng() {
+  if (!getRandomValues) {
+    if (typeof crypto === "undefined" || !crypto.getRandomValues) {
+      throw new Error("crypto.getRandomValues() not supported. See https://github.com/uuidjs/uuid#getrandomvalues-not-supported");
+    }
+    getRandomValues = crypto.getRandomValues.bind(crypto);
+  }
+  return getRandomValues(rnds8);
+}
+const _state = {};
+function v1(options, buf, offset) {
+  let bytes;
+  {
+    const now = Date.now();
+    const rnds = rng();
+    updateV1State(_state, now, rnds);
+    bytes = v1Bytes(rnds, _state.msecs, _state.nsecs, _state.clockseq, _state.node, buf, offset);
+  }
+  return unsafeStringify(bytes);
+}
+function updateV1State(state, now, rnds) {
+  state.msecs ?? (state.msecs = -Infinity);
+  state.nsecs ?? (state.nsecs = 0);
+  if (now === state.msecs) {
+    state.nsecs++;
+    if (state.nsecs >= 1e4) {
+      state.node = void 0;
+      state.nsecs = 0;
+    }
+  } else if (now > state.msecs) {
+    state.nsecs = 0;
+  } else if (now < state.msecs) {
+    state.node = void 0;
+  }
+  if (!state.node) {
+    state.node = rnds.slice(10, 16);
+    state.node[0] |= 1;
+    state.clockseq = (rnds[8] << 8 | rnds[9]) & 16383;
+  }
+  state.msecs = now;
+  return state;
+}
+function v1Bytes(rnds, msecs, nsecs, clockseq, node, buf, offset = 0) {
+  if (rnds.length < 16) {
+    throw new Error("Random bytes length must be >= 16");
+  }
+  if (!buf) {
+    buf = new Uint8Array(16);
+    offset = 0;
+  } else {
+    if (offset < 0 || offset + 16 > buf.length) {
+      throw new RangeError(`UUID byte range ${offset}:${offset + 15} is out of buffer bounds`);
+    }
+  }
+  msecs ?? (msecs = Date.now());
+  nsecs ?? (nsecs = 0);
+  clockseq ?? (clockseq = (rnds[8] << 8 | rnds[9]) & 16383);
+  node ?? (node = rnds.slice(10, 16));
+  msecs += 122192928e5;
+  const tl = ((msecs & 268435455) * 1e4 + nsecs) % 4294967296;
+  buf[offset++] = tl >>> 24 & 255;
+  buf[offset++] = tl >>> 16 & 255;
+  buf[offset++] = tl >>> 8 & 255;
+  buf[offset++] = tl & 255;
+  const tmh = msecs / 4294967296 * 1e4 & 268435455;
+  buf[offset++] = tmh >>> 8 & 255;
+  buf[offset++] = tmh & 255;
+  buf[offset++] = tmh >>> 24 & 15 | 16;
+  buf[offset++] = tmh >>> 16 & 255;
+  buf[offset++] = clockseq >>> 8 | 128;
+  buf[offset++] = clockseq & 255;
+  for (let n = 0; n < 6; ++n) {
+    buf[offset++] = node[n];
+  }
+  return buf;
+}
+const greetingForm = "_greetingForm_1vlx3_1";
+const inputAndButtonContainer = "_inputAndButtonContainer_1vlx3_5";
+const error = "_error_1vlx3_13";
+const input = "_input_1vlx3_5";
+const errorInput = "_errorInput_1vlx3_37";
+const button = "_button_1vlx3_42";
+const text = "_text_1vlx3_66";
+const greeting = "_greeting_1vlx3_1";
+const s = {
+  greetingForm,
+  inputAndButtonContainer,
+  error,
+  input,
+  errorInput,
+  button,
+  text,
+  greeting
+};
+const Greeting = ({
+  name: name2,
+  setNameCallback,
+  addUser,
+  onEnter,
+  onBlur,
+  error: error2,
+  totalUsers,
+  lastUserName
+}) => {
+  const inputClass = error2 ? s.errorInput : s.input;
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw3-form", className: s.greetingForm, children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s.text, children: [
+      "Людей добавили: ",
+      /* @__PURE__ */ jsxRuntimeExports.jsx("span", { id: "hw3-users-total", children: totalUsers })
+    ] }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s.inputAndButtonContainer, children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          "input",
+          {
+            id: "hw3-input",
+            value: name2,
+            onChange: setNameCallback,
+            className: inputClass,
+            onKeyDown: onEnter,
+            onBlur
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { id: "hw3-error", className: s.error, children: error2 })
+      ] }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(
+        "button",
+        {
+          id: "hw3-button",
+          onClick: addUser,
+          className: s.button,
+          disabled: !name2.trim(),
+          children: "add"
+        }
+      )
+    ] }),
+    lastUserName && /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s.greeting, children: [
+      "Привет ",
+      /* @__PURE__ */ jsxRuntimeExports.jsx("span", { id: "hw3-last-user", children: lastUserName }),
+      "!"
+    ] })
+  ] });
+};
+const pureAddUser = (name2, setError, setName, addUserCallback) => {
+  const newUserName = name2.trim();
+  if (newUserName) {
+    addUserCallback(name2);
+    setName("");
+  } else {
+    setError("Ошибка! Введите имя!");
+  }
+};
+const pureOnBlur = (name2, setError) => {
+  if (!name2.trim()) {
+    setError("Ошибка! Введите имя!");
+  }
+};
+const pureOnEnter = (e, addUser) => {
+  if (e.key === "Enter") {
+    addUser();
+  }
+};
+const GreetingContainer = ({
+  users,
+  addUserCallback
+}) => {
+  var _a;
+  const [name2, setName] = reactExports.useState("");
+  const [error2, setError] = reactExports.useState("");
+  const setNameCallback = (e) => {
+    setName(e.currentTarget.value);
+    if (error2) {
+      setError("");
+    }
+  };
+  const addUser = () => {
+    pureAddUser(name2, setError, setName, addUserCallback);
+  };
+  const onBlur = () => {
+    pureOnBlur(name2, setError);
+  };
+  const onEnter = (e) => {
+    pureOnEnter(e, addUser);
+  };
+  const totalUsers = users.length;
+  const lastUserName = (_a = users[users.length - 1]) == null ? void 0 : _a.name;
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(
+    Greeting,
+    {
+      name: name2,
+      setNameCallback,
+      addUser,
+      onBlur,
+      onEnter,
+      error: error2,
+      totalUsers,
+      lastUserName
+    }
+  );
+};
+const pureAddUserCallback = (name2, setUsers, users) => {
+  const user = {
+    _id: v1(),
+    name: name2
+  };
+  setUsers([...users, user]);
+};
+const HW3 = () => {
+  const [users, setUsers] = reactExports.useState([]);
+  const addUserCallback = (name2) => {
+    pureAddUserCallback(name2, setUsers, users);
+  };
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw3", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$6.hwTitle, children: "Homework #3" }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$6.hw, children: /* @__PURE__ */ jsxRuntimeExports.jsx(GreetingContainer, { users, addUserCallback }) })
+  ] });
+};
 function App() {
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$5.App, children: [
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$6.App, children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx(HW1, {}),
-    /* @__PURE__ */ jsxRuntimeExports.jsx(HW2, {})
+    /* @__PURE__ */ jsxRuntimeExports.jsx(HW2, {}),
+    /* @__PURE__ */ jsxRuntimeExports.jsx(HW3, {})
   ] });
 }
 clientExports.createRoot(document.getElementById("root")).render(
   /* @__PURE__ */ jsxRuntimeExports.jsx(jsxRuntimeExports.Fragment, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(App, {}) })
 );
-//# sourceMappingURL=index-CbbxTwke.js.map
+//# sourceMappingURL=index-DNGfDnHa.js.map
