@@ -3,6 +3,9 @@
 .App {
   /* --header_height: 60px; */
   --header_height: 142px;
+  --color_primary: #0066CC;
+  --color_light: #FFFFFF;
+  --color_error: #CC0000;
 
   font-family: 'Montserrat';
   font-style: normal;
@@ -15,7 +18,7 @@
   width: 100%;
   margin: 0 auto;
 
-  padding: var(--header_height) 20px 0;
+  padding: var(--header_height) 20px;
   background: #FFFFFF;
   min-height: 100vw;
 
