@@ -390,11 +390,11 @@ button:focus-visible {
   gap: 17px;
   flex-wrap: wrap;
   max-width: 450px;
-}._greetingForm_1vlx3_1 {
+}._greetingForm_zkg7w_1 {
   min-height: 336px;
 }
 
-._inputAndButtonContainer_1vlx3_5 {
+._inputAndButtonContainer_zkg7w_5 {
   display: flex;
   align-items: flex-start;
   gap: 12px;
@@ -402,7 +402,7 @@ button:focus-visible {
   margin: 10px 0;
 }
 
-._error_1vlx3_13 {
+._error_zkg7w_13 {
   font-size: 14px;
   line-height: 17px;
   margin-top: 8px;
@@ -410,7 +410,7 @@ button:focus-visible {
   color: var(--color_error);
 }
 
-input {
+._input_zkg7w_5 {
   min-width: 372px;
   padding: 8px 12px;
 
@@ -419,19 +419,17 @@ input {
   line-height: 20px;
 }
 
-._input_1vlx3_5 {}
-
-._input_1vlx3_5:focus-visible {
+._input_zkg7w_5:focus-visible {
   border: 2px solid var(--color_primary);
   outline: none
 }
 
-._errorInput_1vlx3_37 {
+._errorInput_zkg7w_35 {
   border: 2px solid var(--color_error);
   outline: none;
 }
 
-._button_1vlx3_42 {
+._button_zkg7w_40 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -447,21 +445,21 @@ input {
   color: var(--color_light);
 }
 
-._button_1vlx3_42:focus {}
+._button_zkg7w_40:focus {}
 
-._button_1vlx3_42:active {}
+._button_zkg7w_40:active {}
 
-._button_1vlx3_42:disabled {
+._button_zkg7w_40:disabled {
   opacity: 0.5;
 }
 
-._text_1vlx3_66 {
+._text_zkg7w_64 {
   font-size: 14px;
   line-height: 17px;
   color: rgba(0, 0, 0, 0.5);
 }
 
-._greeting_1vlx3_1 {
+._greeting_zkg7w_1 {
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
@@ -508,7 +506,7 @@ input {
 
 ._error_1m8sk_13 {
 }
-._label_e9e1v_1 {
+._label_1fnxt_1 {
     display: flex;
     align-items: center;
 
@@ -517,7 +515,7 @@ input {
 
 /*input[type="checkbox"] - no*/
 
-._checkbox_e9e1v_10 {
+._checkbox_1fnxt_10 {
     appearance: none;
     /*Свойство appearance изменяет внешний вид элемента интерфейса, при сохранении его функции.
        Если задать значение none, то чекбокс пропадет, но по нему, тем не менее,
@@ -537,54 +535,43 @@ input {
     cursor: pointer;
 }
 
-._checkbox_e9e1v_10:checked {
+._checkbox_1fnxt_10:checked {
     appearance: none;
 
     background-image: url("data:image/svg+xml,%3csvg%20width='10'%20height='9'%20viewBox='0%200%2010%209'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M7.70019%201.38993L3.92019%206.38993L2.29019%204.27993C2.12708%204.07041%201.88742%203.93427%201.62393%203.90145C1.36044%203.86863%201.09471%203.94182%200.885189%204.10493C0.675668%204.26804%200.539523%204.5077%200.506704%204.77119C0.473885%205.03468%200.547081%205.30041%200.710189%205.50993L3.14019%208.61993C3.23436%208.73911%203.35445%208.83527%203.49133%208.90111C3.62821%208.96696%203.7783%209.00075%203.93019%208.99993C4.08291%208.99957%204.23351%208.96422%204.37045%208.89662C4.50739%208.82902%204.62703%208.73095%204.72019%208.60993L9.29019%202.60993C9.45197%202.39776%209.52284%202.13001%209.48721%201.86558C9.45158%201.60116%209.31236%201.36171%209.10019%201.19993C8.88802%201.03815%208.62027%200.96728%208.35584%201.00291C8.09141%201.03854%207.85197%201.17776%207.69019%201.38993H7.70019Z'%20fill='%230066CC'/%3e%3c/svg%3e");
-    /*background: #99ff99;*/
+    /* background: #99ff99; */
 }
 
-._checkbox_e9e1v_10:focus {
+._checkbox_1fnxt_10:focus {
     border-color: #0059b3;
 }
 
-._spanClassName_e9e1v_41 {
+._spanClassName_1fnxt_41 {
     font-family: 'Montserrat', sans-serif;
     color: #06c;
 }
-._button_w8878_1 {
+._button_ff3yo_1 {}
+
+._disabled_ff3yo_3 {}
+
+._secondary_ff3yo_5 {}
+
+._default_ff3yo_7 {}
+
+._red_ff3yo_9 {
+  background-color: red;
 }
 
-._disabled_w8878_4 {
-}
+._default_ff3yo_7:hover {}
 
-._secondary_w8878_7 {
-}
+._red_ff3yo_9:hover {}
 
-._default_w8878_10 {
-}
+._secondary_ff3yo_5:hover {}
 
-._red_w8878_13 {
-}
+._default_ff3yo_7:active {}
 
-._default_w8878_10:hover {
-}
+._secondary_ff3yo_5:active {}
 
-._red_w8878_13:hover {
-}
+._red_ff3yo_9:active {}
 
-._secondary_w8878_7:hover {
-}
-
-
-._default_w8878_10:active {
-}
-
-._secondary_w8878_7:active {
-}
-
-._red_w8878_13:active {
-}
-
-._button_w8878_1:disabled {
-}
+._button_ff3yo_1:disabled {}

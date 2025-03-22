@@ -7465,14 +7465,14 @@ function v1Bytes(rnds, msecs, nsecs, clockseq, node, buf, offset = 0) {
   }
   return buf;
 }
-const greetingForm = "_greetingForm_1vlx3_1";
-const inputAndButtonContainer = "_inputAndButtonContainer_1vlx3_5";
-const error$1 = "_error_1vlx3_13";
-const input$1 = "_input_1vlx3_5";
-const errorInput$1 = "_errorInput_1vlx3_37";
-const button$1 = "_button_1vlx3_42";
-const text = "_text_1vlx3_66";
-const greeting = "_greeting_1vlx3_1";
+const greetingForm = "_greetingForm_zkg7w_1";
+const inputAndButtonContainer = "_inputAndButtonContainer_zkg7w_5";
+const error$1 = "_error_zkg7w_13";
+const input$1 = "_input_zkg7w_5";
+const errorInput$1 = "_errorInput_zkg7w_35";
+const button$1 = "_button_zkg7w_40";
+const text = "_text_zkg7w_64";
+const greeting = "_greeting_zkg7w_1";
 const s$4 = {
   greetingForm,
   inputAndButtonContainer,
@@ -7646,12 +7646,12 @@ const SuperInputText = ({
   };
   const onKeyPressCallback = (e) => {
     onKeyPress == null ? void 0 : onKeyPress(e);
-    onEnter && // если есть пропс onEnter
-    e.key === "Enter" && // и если нажата кнопка Enter
-    onEnter();
+    if (onEnter && e.key === "Enter") {
+      onEnter();
+    }
   };
-  const finalSpanClassName = s$2.error + (spanClassName2 ? " " + spanClassName2 : "");
-  const finalInputClassName = s$2.input + (error2 ? " " + s$2.errorInput : " " + s$2.superInput) + (className ? " " + className : "");
+  const finalSpanClassName = `${s$2.error} ${spanClassName2 ? spanClassName2 : ""}`;
+  const finalInputClassName = `${s$2.input} ${error2 ? s$2.errorInput : s$2.superInput} ${className ? className : ""}`;
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$2.inputWrapper, children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx(
       "input",
@@ -7660,7 +7660,6 @@ const SuperInputText = ({
         type: "text",
         onChange: onChangeCallback,
         onKeyPress: (e) => {
-          console.log(e.key);
           onKeyPressCallback(e);
         },
         className: finalInputClassName,
@@ -7670,9 +7669,9 @@ const SuperInputText = ({
     /* @__PURE__ */ jsxRuntimeExports.jsx("span", { id: id ? id + "-span" : void 0, className: finalSpanClassName, children: error2 })
   ] });
 };
-const label = "_label_e9e1v_1";
-const checkbox = "_checkbox_e9e1v_10";
-const spanClassName = "_spanClassName_e9e1v_41";
+const label = "_label_1fnxt_1";
+const checkbox = "_checkbox_1fnxt_10";
+const spanClassName = "_spanClassName_1fnxt_41";
 const s$1 = {
   label,
   checkbox,
@@ -7690,8 +7689,10 @@ const SuperCheckbox = ({
   // все остальные пропсы попадут в объект restProps
 }) => {
   const onChangeCallback = (e) => {
+    onChange == null ? void 0 : onChange(e);
+    onChangeChecked == null ? void 0 : onChangeChecked(e.currentTarget.checked);
   };
-  const finalInputClassName = s$1.checkbox + (className ? " " + className : "");
+  const finalInputClassName = `${s$1.checkbox} ${className ? className : ""}`;
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("label", { className: s$1.label, children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx(
       "input",
@@ -7703,25 +7704,18 @@ const SuperCheckbox = ({
         ...restProps
       }
     ),
-    children && /* @__PURE__ */ jsxRuntimeExports.jsx(
-      "span",
-      {
-        id: id ? id + "-span" : void 0,
-        className: s$1.spanClassName,
-        children
-      }
-    )
+    children && /* @__PURE__ */ jsxRuntimeExports.jsx("span", { id: id ? id + "-span" : void 0, className: s$1.spanClassName, children })
   ] });
 };
-const button = "_button_w8878_1";
-const disabled = "_disabled_w8878_4";
-const secondary = "_secondary_w8878_7";
-const red = "_red_w8878_13";
+const button = "_button_ff3yo_1";
+const disabled = "_disabled_ff3yo_3";
+const secondary = "_secondary_ff3yo_5";
+const red = "_red_ff3yo_9";
 const s = {
   button,
   disabled,
   secondary,
-  "default": "_default_w8878_10",
+  "default": "_default_ff3yo_7",
   red
 };
 const SuperButton = ({
@@ -7731,7 +7725,7 @@ const SuperButton = ({
   ...restProps
   // все остальные пропсы попадут в объект restProps, там же будет children
 }) => {
-  const finalClassName = s.button + (className ? " " + className : "");
+  const finalClassName = `${s.button} ${disabled2 ? s.disabled : ""} ${xType === "red" ? s.red : xType === "secondary" ? s.secondary : s.default} ${className ? className : ""}`;
   return /* @__PURE__ */ jsxRuntimeExports.jsx(
     "button",
     {
@@ -7813,4 +7807,4 @@ function App() {
 clientExports.createRoot(document.getElementById("root")).render(
   /* @__PURE__ */ jsxRuntimeExports.jsx(jsxRuntimeExports.Fragment, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(App, {}) })
 );
-//# sourceMappingURL=index-C2UO0UwX.js.map
+//# sourceMappingURL=index-AK2msTRe.js.map
