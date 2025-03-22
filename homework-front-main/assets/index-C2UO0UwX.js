@@ -7051,7 +7051,7 @@ var clientExports = requireClient();
 const App$1 = "_App_t5hlw_3";
 const hw = "_hw_t5hlw_27";
 const hwTitle = "_hwTitle_t5hlw_33";
-const s$6 = {
+const s$a = {
   App: App$1,
   hw,
   hwTitle
@@ -7062,7 +7062,7 @@ const text$1 = "_text_1k515_24";
 const name$1 = "_name_1k515_52";
 const messageText = "_messageText_1k515_56";
 const time = "_time_1k515_60";
-const s$5 = {
+const s$9 = {
   message,
   imageAndText,
   text: text$1,
@@ -7071,8 +7071,8 @@ const s$5 = {
   time
 };
 const Message = (props) => {
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw1-message-" + props.message.id, className: s$5.message, children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$5.imageAndText, children: [
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw1-message-" + props.message.id, className: s$9.message, children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$9.imageAndText, children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx(
         "img",
         {
@@ -7080,22 +7080,22 @@ const Message = (props) => {
           src: props.message.user.avatar
         }
       ),
-      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$5.text, children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { id: "hw1-name-" + props.message.id, className: s$5.name, children: props.message.user.name }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("pre", { id: "hw1-text-" + props.message.id, className: s$5.messageText, children: props.message.message.text })
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$9.text, children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { id: "hw1-name-" + props.message.id, className: s$9.name, children: props.message.user.name }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("pre", { id: "hw1-text-" + props.message.id, className: s$9.messageText, children: props.message.message.text })
       ] })
     ] }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { id: "hw1-time-" + props.message.id, className: s$5.time, children: props.message.message.time })
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { id: "hw1-time-" + props.message.id, className: s$9.time, children: props.message.message.time })
   ] });
 };
 var reactExports = requireReact();
 const sendForm = "_sendForm_4le5a_1";
 const textarea = "_textarea_4le5a_9";
-const button$2 = "_button_4le5a_42";
-const s$4 = {
+const button$3 = "_button_4le5a_42";
+const s$8 = {
   sendForm,
   textarea,
-  button: button$2
+  button: button$3
 };
 const MessageSender = (props) => {
   const M = props.M;
@@ -7130,12 +7130,12 @@ const MessageSender = (props) => {
   };
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [
     messages.map((m) => /* @__PURE__ */ jsxRuntimeExports.jsx(M, { message: m }, "message" + m.id)),
-    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw1-send-message-form", className: s$4.sendForm, children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw1-send-message-form", className: s$8.sendForm, children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx(
         "textarea",
         {
           id: "hw1-textarea",
-          className: s$4.textarea,
+          className: s$8.textarea,
           ref: textareaRef,
           title: "Shift+Enter for send",
           placeholder: "Type your message",
@@ -7148,7 +7148,7 @@ const MessageSender = (props) => {
         "button",
         {
           id: "hw1-button",
-          className: s$4.button,
+          className: s$8.button,
           onClick: addMessage,
           children: "Send"
         }
@@ -7162,7 +7162,7 @@ const friendText = "_friendText_9n20o_23";
 const friendName = "_friendName_9n20o_50";
 const friendMessageText = "_friendMessageText_9n20o_54";
 const friendTime = "_friendTime_9n20o_59";
-const s$3 = {
+const s$7 = {
   friendMessage,
   friendImageAndText,
   friendText,
@@ -7175,9 +7175,9 @@ const FriendMessage = (props) => {
     "div",
     {
       id: "hw1-friend-message-" + props.message.id,
-      className: s$3.friendMessage,
+      className: s$7.friendMessage,
       children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$3.friendImageAndText, children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$7.friendImageAndText, children: [
           /* @__PURE__ */ jsxRuntimeExports.jsx(
             "img",
             {
@@ -7185,12 +7185,12 @@ const FriendMessage = (props) => {
               src: props.message.user.avatar
             }
           ),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$3.friendText, children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$7.friendText, children: [
             /* @__PURE__ */ jsxRuntimeExports.jsx(
               "div",
               {
                 id: "hw1-friend-name-" + props.message.id,
-                className: s$3.friendName,
+                className: s$7.friendName,
                 children: props.message.user.name
               }
             ),
@@ -7198,13 +7198,13 @@ const FriendMessage = (props) => {
               "pre",
               {
                 id: "hw1-friend-text-" + props.message.id,
-                className: s$3.friendMessageText,
+                className: s$7.friendMessageText,
                 children: props.message.message.text
               }
             )
           ] })
         ] }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { id: "hw1-friend-time-" + props.message.id, className: s$3.friendTime, children: props.message.message.time })
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { id: "hw1-friend-time-" + props.message.id, className: s$7.friendTime, children: props.message.message.time })
       ]
     }
   );
@@ -7242,8 +7242,8 @@ const friendMessage0 = {
 };
 const HW1 = () => {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw1", children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$6.hwTitle, children: "Homework #1" }),
-    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$6.hw, children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$a.hwTitle, children: "Homework #1" }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$a.hw, children: [
       /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx(Message, { message: message0 }),
         /* @__PURE__ */ jsxRuntimeExports.jsx(FriendMessage, { message: friendMessage0 })
@@ -7255,7 +7255,7 @@ const HW1 = () => {
 const affair = "_affair_otgf0_1";
 const name = "_name_otgf0_10";
 const closeButton = "_closeButton_otgf0_18";
-const s$2 = {
+const s$6 = {
   affair,
   name,
   closeButton
@@ -7265,16 +7265,16 @@ const all = "_all_1a9zw_7";
 const low = "_low_1a9zw_11";
 const high = "_high_1a9zw_15";
 const middle = "_middle_1a9zw_19";
-const button$1 = "_button_1a9zw_1";
+const button$2 = "_button_1a9zw_1";
 const active = "_active_1a9zw_45";
 const affairs = "_affairs_1a9zw_50";
-const s$1 = {
+const s$5 = {
   buttonContainer,
   all,
   low,
   high,
   middle,
-  button: button$1,
+  button: button$2,
   active,
   affairs
 };
@@ -7282,9 +7282,9 @@ function Affair(props) {
   const deleteCallback = () => {
     props.deleteAffairCallback(props.affair._id);
   };
-  const nameClass = s$2.name + " " + s$1[props.affair.priority];
-  const buttonClass = s$2.closeButton + " " + s$1[props.affair.priority];
-  const affairClass = s$2.affair + " " + s$1[props.affair.priority];
+  const nameClass = s$6.name + " " + s$5[props.affair.priority];
+  const buttonClass = s$6.closeButton + " " + s$5[props.affair.priority];
+  const affairClass = s$6.affair + " " + s$5[props.affair.priority];
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw2-affair-" + props.affair._id, className: affairClass, children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx("div", { id: "hw2-name-" + props.affair._id, className: nameClass, children: props.affair.name }),
     /* @__PURE__ */ jsxRuntimeExports.jsx("div", { id: "hw2-priority-" + props.affair._id, hidden: true, children: props.affair.priority }),
@@ -7312,10 +7312,10 @@ function Affairs(props) {
   const setLow = () => {
     props.setFilter("low");
   };
-  const cnAll = s$1.button + " " + s$1.all + (props.filter === "all" ? " " + s$1.active : "");
-  const cnHigh = s$1.button + " " + s$1.high + (props.filter === "high" ? " " + s$1.active : "");
-  const cnMiddle = s$1.button + " " + s$1.middle + (props.filter === "middle" ? " " + s$1.active : "");
-  const cnLow = s$1.button + " " + s$1.low + (props.filter === "low" ? " " + s$1.active : "");
+  const cnAll = s$5.button + " " + s$5.all + (props.filter === "all" ? " " + s$5.active : "");
+  const cnHigh = s$5.button + " " + s$5.high + (props.filter === "high" ? " " + s$5.active : "");
+  const cnMiddle = s$5.button + " " + s$5.middle + (props.filter === "middle" ? " " + s$5.active : "");
+  const cnLow = s$5.button + " " + s$5.low + (props.filter === "low" ? " " + s$5.active : "");
   const mappedAffairs = props.data.map((a) => /* @__PURE__ */ jsxRuntimeExports.jsx(
     Affair,
     {
@@ -7325,7 +7325,7 @@ function Affairs(props) {
     a._id
   ));
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$1.buttonContainer, children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$5.buttonContainer, children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx("button", { id: "hw2-button-all", onClick: setAll, className: cnAll, children: "All" }),
       /* @__PURE__ */ jsxRuntimeExports.jsx("button", { id: "hw2-button-high", onClick: setHigh, className: cnHigh, children: "High" }),
       /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -7339,7 +7339,7 @@ function Affairs(props) {
       ),
       /* @__PURE__ */ jsxRuntimeExports.jsx("button", { id: "hw2-button-low", onClick: setLow, className: cnLow, children: "Low" })
     ] }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$1.affairs, children: mappedAffairs })
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$5.affairs, children: mappedAffairs })
   ] });
 }
 const defaultAffairs = [
@@ -7368,8 +7368,8 @@ function HW2() {
     setAffairs((prevState) => deleteAffair(prevState, _id));
   };
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw2", children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$6.hwTitle, children: "Homework #2" }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$6.hw, children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$a.hwTitle, children: "Homework #2" }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$a.hw, children: /* @__PURE__ */ jsxRuntimeExports.jsx(
       Affairs,
       {
         data: filteredAffairs,
@@ -7467,19 +7467,19 @@ function v1Bytes(rnds, msecs, nsecs, clockseq, node, buf, offset = 0) {
 }
 const greetingForm = "_greetingForm_1vlx3_1";
 const inputAndButtonContainer = "_inputAndButtonContainer_1vlx3_5";
-const error = "_error_1vlx3_13";
-const input = "_input_1vlx3_5";
-const errorInput = "_errorInput_1vlx3_37";
-const button = "_button_1vlx3_42";
+const error$1 = "_error_1vlx3_13";
+const input$1 = "_input_1vlx3_5";
+const errorInput$1 = "_errorInput_1vlx3_37";
+const button$1 = "_button_1vlx3_42";
 const text = "_text_1vlx3_66";
 const greeting = "_greeting_1vlx3_1";
-const s = {
+const s$4 = {
   greetingForm,
   inputAndButtonContainer,
-  error,
-  input,
-  errorInput,
-  button,
+  error: error$1,
+  input: input$1,
+  errorInput: errorInput$1,
+  button: button$1,
   text,
   greeting
 };
@@ -7493,13 +7493,13 @@ const Greeting = ({
   totalUsers,
   lastUserName
 }) => {
-  const inputClass = error2 ? s.errorInput : s.input;
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw3-form", className: s.greetingForm, children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s.text, children: [
+  const inputClass = error2 ? s$4.errorInput : s$4.input;
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw3-form", className: s$4.greetingForm, children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$4.text, children: [
       "Людей добавили: ",
       /* @__PURE__ */ jsxRuntimeExports.jsx("span", { id: "hw3-users-total", children: totalUsers })
     ] }),
-    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s.inputAndButtonContainer, children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$4.inputAndButtonContainer, children: [
       /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx(
           "input",
@@ -7512,20 +7512,20 @@ const Greeting = ({
             onBlur
           }
         ),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { id: "hw3-error", className: s.error, children: error2 })
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { id: "hw3-error", className: s$4.error, children: error2 })
       ] }),
       /* @__PURE__ */ jsxRuntimeExports.jsx(
         "button",
         {
           id: "hw3-button",
           onClick: addUser,
-          className: s.button,
+          className: s$4.button,
           disabled: !name2.trim(),
           children: "add"
         }
       )
     ] }),
-    lastUserName && /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s.greeting, children: [
+    lastUserName && /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$4.greeting, children: [
       "Привет ",
       /* @__PURE__ */ jsxRuntimeExports.jsx("span", { id: "hw3-last-user", children: lastUserName }),
       "!"
@@ -7602,18 +7602,215 @@ const HW3 = () => {
     pureAddUserCallback(name2, setUsers, users);
   };
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw3", children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$6.hwTitle, children: "Homework #3" }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$6.hw, children: /* @__PURE__ */ jsxRuntimeExports.jsx(GreetingContainer, { users, addUserCallback }) })
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$a.hwTitle, children: "Homework #3" }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$a.hw, children: /* @__PURE__ */ jsxRuntimeExports.jsx(GreetingContainer, { users, addUserCallback }) })
+  ] });
+};
+const stand = "_stand_1sdjo_1";
+const inputs = "_inputs_1sdjo_7";
+const buttons = "_buttons_1sdjo_13";
+const checkboxes = "_checkboxes_1sdjo_19";
+const s$3 = {
+  stand,
+  inputs,
+  buttons,
+  checkboxes
+};
+const input = "_input_1m8sk_1";
+const inputWrapper = "_inputWrapper_1m8sk_7";
+const superInput = "_superInput_1m8sk_10";
+const errorInput = "_errorInput_1m8sk_13";
+const error = "_error_1m8sk_13";
+const s$2 = {
+  input,
+  inputWrapper,
+  superInput,
+  errorInput,
+  error
+};
+const SuperInputText = ({
+  onChange,
+  onChangeText,
+  onKeyPress,
+  onEnter,
+  error: error2,
+  className,
+  spanClassName: spanClassName2,
+  id,
+  ...restProps
+  // все остальные пропсы попадут в объект restProps
+}) => {
+  const onChangeCallback = (e) => {
+    onChange == null ? void 0 : onChange(e);
+    onChangeText == null ? void 0 : onChangeText(e.currentTarget.value);
+  };
+  const onKeyPressCallback = (e) => {
+    onKeyPress == null ? void 0 : onKeyPress(e);
+    onEnter && // если есть пропс onEnter
+    e.key === "Enter" && // и если нажата кнопка Enter
+    onEnter();
+  };
+  const finalSpanClassName = s$2.error + (spanClassName2 ? " " + spanClassName2 : "");
+  const finalInputClassName = s$2.input + (error2 ? " " + s$2.errorInput : " " + s$2.superInput) + (className ? " " + className : "");
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$2.inputWrapper, children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx(
+      "input",
+      {
+        id,
+        type: "text",
+        onChange: onChangeCallback,
+        onKeyPress: (e) => {
+          console.log(e.key);
+          onKeyPressCallback(e);
+        },
+        className: finalInputClassName,
+        ...restProps
+      }
+    ),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("span", { id: id ? id + "-span" : void 0, className: finalSpanClassName, children: error2 })
+  ] });
+};
+const label = "_label_e9e1v_1";
+const checkbox = "_checkbox_e9e1v_10";
+const spanClassName = "_spanClassName_e9e1v_41";
+const s$1 = {
+  label,
+  checkbox,
+  spanClassName
+};
+const SuperCheckbox = ({
+  onChange,
+  onChangeChecked,
+  className,
+  spanClassName: spanClassName2,
+  children,
+  // в эту переменную попадёт текст, типизировать не нужно так как он затипизирован в React.FC
+  id,
+  ...restProps
+  // все остальные пропсы попадут в объект restProps
+}) => {
+  const onChangeCallback = (e) => {
+  };
+  const finalInputClassName = s$1.checkbox + (className ? " " + className : "");
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("label", { className: s$1.label, children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx(
+      "input",
+      {
+        id,
+        type: "checkbox",
+        onChange: onChangeCallback,
+        className: finalInputClassName,
+        ...restProps
+      }
+    ),
+    children && /* @__PURE__ */ jsxRuntimeExports.jsx(
+      "span",
+      {
+        id: id ? id + "-span" : void 0,
+        className: s$1.spanClassName,
+        children
+      }
+    )
+  ] });
+};
+const button = "_button_w8878_1";
+const disabled = "_disabled_w8878_4";
+const secondary = "_secondary_w8878_7";
+const red = "_red_w8878_13";
+const s = {
+  button,
+  disabled,
+  secondary,
+  "default": "_default_w8878_10",
+  red
+};
+const SuperButton = ({
+  xType,
+  className,
+  disabled: disabled2,
+  ...restProps
+  // все остальные пропсы попадут в объект restProps, там же будет children
+}) => {
+  const finalClassName = s.button + (className ? " " + className : "");
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(
+    "button",
+    {
+      disabled: disabled2,
+      className: finalClassName,
+      ...restProps
+    }
+  );
+};
+const Stand = () => {
+  const [stateForAllInputs, setValue] = reactExports.useState("");
+  const [error2, setError] = reactExports.useState("");
+  const [stateForAllCheckboxes, setChecked] = reactExports.useState(false);
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw4-stand", className: s$3.stand, children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$3.inputs, children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+        SuperInputText,
+        {
+          id: "hw4-super-input-like-old",
+          value: stateForAllInputs,
+          onChange: (e) => setValue(e.currentTarget.value)
+        }
+      ) }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+        SuperInputText,
+        {
+          id: "hw4-super-input-with-error",
+          value: stateForAllInputs,
+          onChangeText: setValue,
+          error: error2,
+          onEnter: () => {
+            setError(stateForAllInputs.trim() ? "" : "Error");
+            setValue("");
+          }
+        }
+      ) })
+    ] }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$3.buttons, children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { children: /* @__PURE__ */ jsxRuntimeExports.jsx(SuperButton, { id: "hw4-super-button-default", children: "default" }) }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { children: /* @__PURE__ */ jsxRuntimeExports.jsx(SuperButton, { id: "hw4-super-button-red", xType: "red", children: "red" }) }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { children: /* @__PURE__ */ jsxRuntimeExports.jsx(SuperButton, { id: "hw4-super-button-disabled", xType: "red", disabled: true, children: "disabled" }) }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { children: /* @__PURE__ */ jsxRuntimeExports.jsx(SuperButton, { id: "hw4-super-button-secondary", xType: "secondary", children: "secondary" }) })
+    ] }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$3.checkboxes, children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+        SuperCheckbox,
+        {
+          id: "hw4-super-checkbox-with-text",
+          checked: stateForAllCheckboxes,
+          onChangeChecked: setChecked,
+          children: "some text"
+        }
+      ) }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+        SuperCheckbox,
+        {
+          id: "hw4-super-checkbox-like-old",
+          checked: stateForAllCheckboxes,
+          onChange: (e) => setChecked(e.currentTarget.checked)
+        }
+      ) })
+    ] })
+  ] });
+};
+const HW4 = () => {
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw4", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$a.hwTitle, children: "Homework #4" }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$a.hw, children: /* @__PURE__ */ jsxRuntimeExports.jsx(Stand, {}) })
   ] });
 };
 function App() {
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$6.App, children: [
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$a.App, children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx(HW1, {}),
     /* @__PURE__ */ jsxRuntimeExports.jsx(HW2, {}),
-    /* @__PURE__ */ jsxRuntimeExports.jsx(HW3, {})
+    /* @__PURE__ */ jsxRuntimeExports.jsx(HW3, {}),
+    /* @__PURE__ */ jsxRuntimeExports.jsx(HW4, {})
   ] });
 }
 clientExports.createRoot(document.getElementById("root")).render(
   /* @__PURE__ */ jsxRuntimeExports.jsx(jsxRuntimeExports.Fragment, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(App, {}) })
 );
-//# sourceMappingURL=index-DNGfDnHa.js.map
+//# sourceMappingURL=index-C2UO0UwX.js.map
