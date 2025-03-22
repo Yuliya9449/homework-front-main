@@ -78,12 +78,13 @@ button:focus-visible {
   }
 } */
 
-._App_t5hlw_3 {
+._App_12s0d_3 {
   /* --header_height: 60px; */
   --header_height: 142px;
   --color_primary: #0066CC;
   --color_light: #FFFFFF;
   --color_error: #CC0000;
+  --color_danger: #CC1439;
 
   font-family: 'Montserrat';
   font-style: normal;
@@ -102,13 +103,13 @@ button:focus-visible {
 
 }
 
-._hw_t5hlw_27 {
+._hw_12s0d_28 {
   border-top: 1px solid #D9D9D9;
   border-bottom: 1px solid #D9D9D9;
   padding: 24px 0 32px;
 }
 
-._hwTitle_t5hlw_33 {
+._hwTitle_12s0d_34 {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
@@ -486,92 +487,140 @@ button:focus-visible {
     flex-direction: column;
     gap: 36px;
 }
-._input_1m8sk_1:focus {
+._input_w241n_1:focus {
+  border: 2px solid var(--color_primary);
+  outline: none;
 }
 
-._input_1m8sk_1 {
+._input_w241n_1 {
+  width: 372px;
+  height: 36px;
+  border-radius: 5px;
+  padding: 0 8px;
 }
 
-._inputWrapper_1m8sk_7 {
+._inputWrapper_w241n_13 {
+  display: flex;
+  flex-direction: column-reverse;
 }
 
-._superInput_1m8sk_10 {
+._superInput_w241n_18 {}
+
+._errorInput_w241n_20 {
+  border: 2px solid red;
+  outline: none;
 }
 
-._errorInput_1m8sk_13 {
+._errorInput_w241n_20:focus {
+  border: 2px solid red;
+  outline: none;
 }
 
-._errorInput_1m8sk_13:focus {
-}
+._error_w241n_20 {
+  color: red;
+}._label_1pr07_1 {
+  display: flex;
+  align-items: center;
 
-._error_1m8sk_13 {
-}
-._label_1fnxt_1 {
-    display: flex;
-    align-items: center;
-
-    cursor: pointer;
+  cursor: pointer;
 }
 
 /*input[type="checkbox"] - no*/
 
-._checkbox_1fnxt_10 {
-    appearance: none;
-    /*Свойство appearance изменяет внешний вид элемента интерфейса, при сохранении его функции.
+._checkbox_1pr07_10 {
+  appearance: none;
+  /*Свойство appearance изменяет внешний вид элемента интерфейса, при сохранении его функции.
        Если задать значение none, то чекбокс пропадет, но по нему, тем не менее,
        можно щелкать и состояние чекбокса будет меняться*/
 
-    width: 18px;
-    height: 18px;
+  width: 18px;
+  height: 18px;
 
-    background-repeat: no-repeat;
-    background-position: center center;
+  background-repeat: no-repeat;
+  background-position: center center;
 
-    /* background-size: 90% 90%; */
-    vertical-align: middle;
-    margin-right: 8px;
-    border-radius: 3px;
-    border: 2px solid #06c;
-    cursor: pointer;
+  /* background-size: 90% 90%; */
+  vertical-align: middle;
+  margin-right: 8px;
+  border-radius: 3px;
+  border: 2px solid #06c;
+  cursor: pointer;
 }
 
-._checkbox_1fnxt_10:checked {
-    appearance: none;
+._checkbox_1pr07_10:checked {
+  appearance: none;
 
-    background-image: url("data:image/svg+xml,%3csvg%20width='10'%20height='9'%20viewBox='0%200%2010%209'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M7.70019%201.38993L3.92019%206.38993L2.29019%204.27993C2.12708%204.07041%201.88742%203.93427%201.62393%203.90145C1.36044%203.86863%201.09471%203.94182%200.885189%204.10493C0.675668%204.26804%200.539523%204.5077%200.506704%204.77119C0.473885%205.03468%200.547081%205.30041%200.710189%205.50993L3.14019%208.61993C3.23436%208.73911%203.35445%208.83527%203.49133%208.90111C3.62821%208.96696%203.7783%209.00075%203.93019%208.99993C4.08291%208.99957%204.23351%208.96422%204.37045%208.89662C4.50739%208.82902%204.62703%208.73095%204.72019%208.60993L9.29019%202.60993C9.45197%202.39776%209.52284%202.13001%209.48721%201.86558C9.45158%201.60116%209.31236%201.36171%209.10019%201.19993C8.88802%201.03815%208.62027%200.96728%208.35584%201.00291C8.09141%201.03854%207.85197%201.17776%207.69019%201.38993H7.70019Z'%20fill='%230066CC'/%3e%3c/svg%3e");
-    /* background: #99ff99; */
+  background-image: url("data:image/svg+xml,%3csvg%20width='10'%20height='9'%20viewBox='0%200%2010%209'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M7.70019%201.38993L3.92019%206.38993L2.29019%204.27993C2.12708%204.07041%201.88742%203.93427%201.62393%203.90145C1.36044%203.86863%201.09471%203.94182%200.885189%204.10493C0.675668%204.26804%200.539523%204.5077%200.506704%204.77119C0.473885%205.03468%200.547081%205.30041%200.710189%205.50993L3.14019%208.61993C3.23436%208.73911%203.35445%208.83527%203.49133%208.90111C3.62821%208.96696%203.7783%209.00075%203.93019%208.99993C4.08291%208.99957%204.23351%208.96422%204.37045%208.89662C4.50739%208.82902%204.62703%208.73095%204.72019%208.60993L9.29019%202.60993C9.45197%202.39776%209.52284%202.13001%209.48721%201.86558C9.45158%201.60116%209.31236%201.36171%209.10019%201.19993C8.88802%201.03815%208.62027%200.96728%208.35584%201.00291C8.09141%201.03854%207.85197%201.17776%207.69019%201.38993H7.70019Z'%20fill='%230066CC'/%3e%3c/svg%3e");
+  /* background: #99ff99; */
 }
 
-._checkbox_1fnxt_10:focus {
-    border-color: #0059b3;
+._checkbox_1pr07_10:focus {
+  border-color: #0059b3;
 }
 
-._spanClassName_1fnxt_41 {
-    font-family: 'Montserrat', sans-serif;
-    color: #06c;
+._spanClassName_1pr07_41 {
+  font-family: 'Montserrat', sans-serif;
+  color: #06c;
+}._button_1fekd_1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 24px;
+
+  color: var(--color_light);
+
+  border: none;
+  border-radius: 3px;
+
+  transition: background-color 0.7s;
 }
-._button_ff3yo_1 {}
 
-._disabled_ff3yo_3 {}
-
-._secondary_ff3yo_5 {}
-
-._default_ff3yo_7 {}
-
-._red_ff3yo_9 {
-  background-color: red;
+._disabled_1fekd_15 {
+  /* background-color: #004D99;
+  opacity: 0.5; */
 }
 
-._default_ff3yo_7:hover {}
+._secondary_1fekd_20 {
+  color: var(--color_primary);
+  background-color: transparent;
+  border: 1px solid var(--color_primary);
+}
 
-._red_ff3yo_9:hover {}
+._default_1fekd_26 {
+  background-color: var(--color_primary);
+}
 
-._secondary_ff3yo_5:hover {}
+._red_1fekd_30 {
+  background-color: var(--color_danger);
+}
 
-._default_ff3yo_7:active {}
+._default_1fekd_26:hover {
+  background-color: #0080FF;
+  border-radius: 3px;
+}
 
-._secondary_ff3yo_5:active {}
+._red_1fekd_30:hover {
+  background-color: #FF1A47;
+}
 
-._red_ff3yo_9:active {}
+._secondary_1fekd_20:hover {
+  background-color: #E5F0FA;
 
-._button_ff3yo_1:disabled {}
+}
+
+._default_1fekd_26:active {
+  background-color: #0059B3;
+}
+
+._secondary_1fekd_20:active {
+  background-color: #C9E5FF;
+}
+
+._red_1fekd_30:active {
+  background-color: #B31232;
+}
+
+._button_1fekd_1:disabled {
+  background-color: #004D99;
+  opacity: 0.5;
+}

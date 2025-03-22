@@ -7048,9 +7048,9 @@ function requireClient() {
   return client;
 }
 var clientExports = requireClient();
-const App$1 = "_App_t5hlw_3";
-const hw = "_hw_t5hlw_27";
-const hwTitle = "_hwTitle_t5hlw_33";
+const App$1 = "_App_12s0d_3";
+const hw = "_hw_12s0d_28";
+const hwTitle = "_hwTitle_12s0d_34";
 const s$a = {
   App: App$1,
   hw,
@@ -7493,7 +7493,7 @@ const Greeting = ({
   totalUsers,
   lastUserName
 }) => {
-  const inputClass = error2 ? s$4.errorInput : s$4.input;
+  const inputClass = `${s$4.input} ${error2 ? s$4.errorInput : ""}`;
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw3-form", className: s$4.greetingForm, children: [
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$4.text, children: [
       "Людей добавили: ",
@@ -7616,11 +7616,11 @@ const s$3 = {
   buttons,
   checkboxes
 };
-const input = "_input_1m8sk_1";
-const inputWrapper = "_inputWrapper_1m8sk_7";
-const superInput = "_superInput_1m8sk_10";
-const errorInput = "_errorInput_1m8sk_13";
-const error = "_error_1m8sk_13";
+const input = "_input_w241n_1";
+const inputWrapper = "_inputWrapper_w241n_13";
+const superInput = "_superInput_w241n_18";
+const errorInput = "_errorInput_w241n_20";
+const error = "_error_w241n_20";
 const s$2 = {
   input,
   inputWrapper,
@@ -7669,9 +7669,9 @@ const SuperInputText = ({
     /* @__PURE__ */ jsxRuntimeExports.jsx("span", { id: id ? id + "-span" : void 0, className: finalSpanClassName, children: error2 })
   ] });
 };
-const label = "_label_1fnxt_1";
-const checkbox = "_checkbox_1fnxt_10";
-const spanClassName = "_spanClassName_1fnxt_41";
+const label = "_label_1pr07_1";
+const checkbox = "_checkbox_1pr07_10";
+const spanClassName = "_spanClassName_1pr07_41";
 const s$1 = {
   label,
   checkbox,
@@ -7707,15 +7707,15 @@ const SuperCheckbox = ({
     children && /* @__PURE__ */ jsxRuntimeExports.jsx("span", { id: id ? id + "-span" : void 0, className: s$1.spanClassName, children })
   ] });
 };
-const button = "_button_ff3yo_1";
-const disabled = "_disabled_ff3yo_3";
-const secondary = "_secondary_ff3yo_5";
-const red = "_red_ff3yo_9";
+const button = "_button_1fekd_1";
+const disabled = "_disabled_1fekd_15";
+const secondary = "_secondary_1fekd_20";
+const red = "_red_1fekd_30";
 const s = {
   button,
   disabled,
   secondary,
-  "default": "_default_ff3yo_7",
+  "default": "_default_1fekd_26",
   red
 };
 const SuperButton = ({
@@ -7807,4 +7807,4 @@ function App() {
 clientExports.createRoot(document.getElementById("root")).render(
   /* @__PURE__ */ jsxRuntimeExports.jsx(jsxRuntimeExports.Fragment, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(App, {}) })
 );
-//# sourceMappingURL=index-AK2msTRe.js.map
+//# sourceMappingURL=index-DLTFM4JP.js.map
