@@ -24,7 +24,7 @@ const Greeting = ({
   totalUsers,
   lastUserName,
 }: GreetingPropsType) => {
-  const inputClass = error ? s.errorInput : s.input; // need to fix with (?:)
+  const inputClass = `${s.input} ${error ? s.errorInput : ''}`; // need to fix with (?:)
   // const inputClass = s.errorInput; // need to fix with (?:)
 
   return (
