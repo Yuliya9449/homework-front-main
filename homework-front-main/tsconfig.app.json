@@ -25,5 +25,20 @@
     "types": ["vitest/globals"]
   },
   "include": ["src"],
-  // "exclude": ["src"]
+  // "exclude": ["src"],
+  "exclude": [
+    "src/HW_2/src/s2-homeworks/hw06",
+    "src/HW_2/src/s2-homeworks/hw07",
+    "src/HW_2/src/s2-homeworks/hw08",
+    "src/HW_2/src/s2-homeworks/hw09",
+    "src/HW_2/src/s2-homeworks/hw10",
+    "src/HW_2/src/index.tsx",
+    "src/HW_2/src/reportWebVitals.ts",
+    "src/HW_2/src/setupTests.ts",
+    "src/HW_2/src/s2-homeworks/hw11",
+    "src/HW_2/src/s2-homeworks/hw12",
+    "src/HW_2/src/s2-homeworks/hw13",
+    "src/HW_2/src/s2-homeworks/hw14",
+    "src/HW_2/src/s2-homeworks/hw15"
+  ]
 }
