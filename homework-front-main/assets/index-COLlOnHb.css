@@ -663,6 +663,45 @@ button:focus-visible {
 ._button_fnd2u_1:disabled {
   background-color: #004D99;
   opacity: 0.5;
+}._spanBlock_b4xn0_1 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+._span_b4xn0_1 {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: capitalize;
+
+  color: #0080FF;
+}
+
+._input_b4xn0_35 {
+  max-width: 276px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: #000000;
+}
+
+._input_b4xn0_35:focus {
+  border: 2px solid gray;
+}
+
+._pen_b4xn0_65 {}._buttonsContainer_kmbev_1 {
+  display: flex;
+  gap: 25px;
+}
+
+._editableSpanContainer_kmbev_11 {
+  margin-bottom: 20px;
 }._sidebar_rplmh_1 {
   display: none;
   width: 320px;
