@@ -7048,10 +7048,10 @@ function requireClient() {
   return client;
 }
 var clientExports = requireClient();
-const App$1 = "_App_xmo71_5";
-const hw = "_hw_xmo71_63";
-const hwTitle = "_hwTitle_xmo71_77";
-const s$i = {
+const App$1 = "_App_107wp_7";
+const hw = "_hw_107wp_65";
+const hwTitle = "_hwTitle_107wp_79";
+const s$j = {
   App: App$1,
   hw,
   hwTitle
@@ -9325,19 +9325,19 @@ function useViewTransitionState(to, opts = {}) {
 const burgerIcon = "data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M20.05%2011H3.95C3.42533%2011%203%2011.4253%203%2011.95V12.05C3%2012.5747%203.42533%2013%203.95%2013H20.05C20.5747%2013%2021%2012.5747%2021%2012.05V11.95C21%2011.4253%2020.5747%2011%2020.05%2011Z'%20fill='black'/%3e%3cpath%20d='M20.05%2016H3.95C3.42533%2016%203%2016.4253%203%2016.95V17.05C3%2017.5747%203.42533%2018%203.95%2018H20.05C20.5747%2018%2021%2017.5747%2021%2017.05V16.95C21%2016.4253%2020.5747%2016%2020.05%2016Z'%20fill='black'/%3e%3cpath%20d='M20.05%206H3.95C3.42533%206%203%206.42533%203%206.95V7.05C3%207.57467%203.42533%208%203.95%208H20.05C20.5747%208%2021%207.57467%2021%207.05V6.95C21%206.42533%2020.5747%206%2020.05%206Z'%20fill='black'/%3e%3c/svg%3e";
 const burgerMenuIcon = "_burgerMenuIcon_1emye_1";
 const header = "_header_1emye_13";
-const s$h = {
+const s$i = {
   burgerMenuIcon,
   header
 };
 const error404$1 = "_error404_o5pwc_1";
 const wrapper = "_wrapper_o5pwc_11";
-const s$g = {
+const s$h = {
   error404: error404$1,
   wrapper
 };
 const error404 = "" + new URL("404-CQxt3zzL.svg", import.meta.url).href;
 const Error404 = () => {
-  return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { id: "hw5-page-404", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$g.wrapper, children: /* @__PURE__ */ jsxRuntimeExports.jsx("img", { src: error404, alt: "404", className: s$g.error404 }) }) });
+  return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { id: "hw5-page-404", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$h.wrapper, children: /* @__PURE__ */ jsxRuntimeExports.jsx("img", { src: error404, alt: "404", className: s$h.error404 }) }) });
 };
 const message = "_message_1a81f_1";
 const imageAndText = "_imageAndText_1a81f_23";
@@ -9345,7 +9345,7 @@ const text$1 = "_text_1a81f_47";
 const name$1 = "_name_1a81f_103";
 const messageText = "_messageText_1a81f_111";
 const time = "_time_1a81f_119";
-const s$f = {
+const s$g = {
   message,
   imageAndText,
   text: text$1,
@@ -9354,8 +9354,8 @@ const s$f = {
   time
 };
 const Message = (props) => {
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw1-message-" + props.message.id, className: s$f.message, children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$f.imageAndText, children: [
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw1-message-" + props.message.id, className: s$g.message, children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$g.imageAndText, children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx(
         "img",
         {
@@ -9363,18 +9363,18 @@ const Message = (props) => {
           src: props.message.user.avatar
         }
       ),
-      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$f.text, children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { id: "hw1-name-" + props.message.id, className: s$f.name, children: props.message.user.name }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("pre", { id: "hw1-text-" + props.message.id, className: s$f.messageText, children: props.message.message.text })
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$g.text, children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { id: "hw1-name-" + props.message.id, className: s$g.name, children: props.message.user.name }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("pre", { id: "hw1-text-" + props.message.id, className: s$g.messageText, children: props.message.message.text })
       ] })
     ] }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { id: "hw1-time-" + props.message.id, className: s$f.time, children: props.message.message.time })
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { id: "hw1-time-" + props.message.id, className: s$g.time, children: props.message.message.time })
   ] });
 };
 const sendForm = "_sendForm_13grg_1";
 const textarea = "_textarea_13grg_17";
 const button$3 = "_button_13grg_83";
-const s$e = {
+const s$f = {
   sendForm,
   textarea,
   button: button$3
@@ -9412,12 +9412,12 @@ const MessageSender = (props) => {
   };
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [
     messages.map((m) => /* @__PURE__ */ jsxRuntimeExports.jsx(M, { message: m }, "message" + m.id)),
-    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw1-send-message-form", className: s$e.sendForm, children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw1-send-message-form", className: s$f.sendForm, children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx(
         "textarea",
         {
           id: "hw1-textarea",
-          className: s$e.textarea,
+          className: s$f.textarea,
           ref: textareaRef,
           title: "Shift+Enter for send",
           placeholder: "Type your message",
@@ -9430,7 +9430,7 @@ const MessageSender = (props) => {
         "button",
         {
           id: "hw1-button",
-          className: s$e.button,
+          className: s$f.button,
           onClick: addMessage,
           children: "Send"
         }
@@ -9444,7 +9444,7 @@ const friendText = "_friendText_1w298_45";
 const friendName = "_friendName_1w298_99";
 const friendMessageText = "_friendMessageText_1w298_107";
 const friendTime = "_friendTime_1w298_117";
-const s$d = {
+const s$e = {
   friendMessage,
   friendImageAndText,
   friendText,
@@ -9457,9 +9457,9 @@ const FriendMessage = (props) => {
     "div",
     {
       id: "hw1-friend-message-" + props.message.id,
-      className: s$d.friendMessage,
+      className: s$e.friendMessage,
       children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$d.friendImageAndText, children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$e.friendImageAndText, children: [
           /* @__PURE__ */ jsxRuntimeExports.jsx(
             "img",
             {
@@ -9467,12 +9467,12 @@ const FriendMessage = (props) => {
               src: props.message.user.avatar
             }
           ),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$d.friendText, children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$e.friendText, children: [
             /* @__PURE__ */ jsxRuntimeExports.jsx(
               "div",
               {
                 id: "hw1-friend-name-" + props.message.id,
-                className: s$d.friendName,
+                className: s$e.friendName,
                 children: props.message.user.name
               }
             ),
@@ -9480,13 +9480,13 @@ const FriendMessage = (props) => {
               "pre",
               {
                 id: "hw1-friend-text-" + props.message.id,
-                className: s$d.friendMessageText,
+                className: s$e.friendMessageText,
                 children: props.message.message.text
               }
             )
           ] })
         ] }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { id: "hw1-friend-time-" + props.message.id, className: s$d.friendTime, children: props.message.message.time })
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { id: "hw1-friend-time-" + props.message.id, className: s$e.friendTime, children: props.message.message.time })
       ]
     }
   );
@@ -9524,8 +9524,8 @@ const friendMessage0 = {
 };
 const HW1 = () => {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw1", children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$i.hwTitle, children: "Homework #1" }),
-    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$i.hw, children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$j.hwTitle, children: "Homework #1" }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$j.hw, children: [
       /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx(Message, { message: message0 }),
         /* @__PURE__ */ jsxRuntimeExports.jsx(FriendMessage, { message: friendMessage0 })
@@ -9537,7 +9537,7 @@ const HW1 = () => {
 const affair = "_affair_vl28d_1";
 const name = "_name_vl28d_19";
 const closeButton = "_closeButton_vl28d_35";
-const s$c = {
+const s$d = {
   affair,
   name,
   closeButton
@@ -9550,7 +9550,7 @@ const middle = "_middle_8c0rm_37";
 const button$2 = "_button_8c0rm_1";
 const active$1 = "_active_8c0rm_89";
 const affairs = "_affairs_8c0rm_99";
-const s$b = {
+const s$c = {
   buttonContainer,
   all,
   low,
@@ -9564,9 +9564,9 @@ function Affair(props) {
   const deleteCallback = () => {
     props.deleteAffairCallback(props.affair._id);
   };
-  const nameClass = s$c.name + " " + s$b[props.affair.priority];
-  const buttonClass = s$c.closeButton + " " + s$b[props.affair.priority];
-  const affairClass = s$c.affair + " " + s$b[props.affair.priority];
+  const nameClass = s$d.name + " " + s$c[props.affair.priority];
+  const buttonClass = s$d.closeButton + " " + s$c[props.affair.priority];
+  const affairClass = s$d.affair + " " + s$c[props.affair.priority];
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw2-affair-" + props.affair._id, className: affairClass, children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx("div", { id: "hw2-name-" + props.affair._id, className: nameClass, children: props.affair.name }),
     /* @__PURE__ */ jsxRuntimeExports.jsx("div", { id: "hw2-priority-" + props.affair._id, hidden: true, children: props.affair.priority }),
@@ -9594,10 +9594,10 @@ function Affairs(props) {
   const setLow = () => {
     props.setFilter("low");
   };
-  const cnAll = s$b.button + " " + s$b.all + (props.filter === "all" ? " " + s$b.active : "");
-  const cnHigh = s$b.button + " " + s$b.high + (props.filter === "high" ? " " + s$b.active : "");
-  const cnMiddle = s$b.button + " " + s$b.middle + (props.filter === "middle" ? " " + s$b.active : "");
-  const cnLow = s$b.button + " " + s$b.low + (props.filter === "low" ? " " + s$b.active : "");
+  const cnAll = s$c.button + " " + s$c.all + (props.filter === "all" ? " " + s$c.active : "");
+  const cnHigh = s$c.button + " " + s$c.high + (props.filter === "high" ? " " + s$c.active : "");
+  const cnMiddle = s$c.button + " " + s$c.middle + (props.filter === "middle" ? " " + s$c.active : "");
+  const cnLow = s$c.button + " " + s$c.low + (props.filter === "low" ? " " + s$c.active : "");
   const mappedAffairs = props.data.map((a) => /* @__PURE__ */ jsxRuntimeExports.jsx(
     Affair,
     {
@@ -9607,7 +9607,7 @@ function Affairs(props) {
     a._id
   ));
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$b.buttonContainer, children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$c.buttonContainer, children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx("button", { id: "hw2-button-all", onClick: setAll, className: cnAll, children: "All" }),
       /* @__PURE__ */ jsxRuntimeExports.jsx("button", { id: "hw2-button-high", onClick: setHigh, className: cnHigh, children: "High" }),
       /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -9621,7 +9621,7 @@ function Affairs(props) {
       ),
       /* @__PURE__ */ jsxRuntimeExports.jsx("button", { id: "hw2-button-low", onClick: setLow, className: cnLow, children: "Low" })
     ] }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$b.affairs, children: mappedAffairs })
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$c.affairs, children: mappedAffairs })
   ] });
 }
 const defaultAffairs = [
@@ -9650,8 +9650,8 @@ function HW2() {
     setAffairs((prevState) => deleteAffair(prevState, _id));
   };
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw2", children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$i.hwTitle, children: "Homework #2" }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$i.hw, children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$j.hwTitle, children: "Homework #2" }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$j.hw, children: /* @__PURE__ */ jsxRuntimeExports.jsx(
       Affairs,
       {
         data: filteredAffairs,
@@ -9755,7 +9755,7 @@ const errorInput$1 = "_errorInput_1wwti_69";
 const button$1 = "_button_1wwti_79";
 const text = "_text_1wwti_127";
 const greeting = "_greeting_1wwti_1";
-const s$a = {
+const s$b = {
   greetingForm,
   inputAndButtonContainer,
   error: error$1,
@@ -9775,13 +9775,13 @@ const Greeting = ({
   totalUsers,
   lastUserName
 }) => {
-  const inputClass = `${s$a.input} ${error2 ? s$a.errorInput : ""}`;
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw3-form", className: s$a.greetingForm, children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$a.text, children: [
+  const inputClass = `${s$b.input} ${error2 ? s$b.errorInput : ""}`;
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw3-form", className: s$b.greetingForm, children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$b.text, children: [
       "Людей добавили: ",
       /* @__PURE__ */ jsxRuntimeExports.jsx("span", { id: "hw3-users-total", children: totalUsers })
     ] }),
-    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$a.inputAndButtonContainer, children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$b.inputAndButtonContainer, children: [
       /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx(
           "input",
@@ -9794,20 +9794,20 @@ const Greeting = ({
             onBlur
           }
         ),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { id: "hw3-error", className: s$a.error, children: error2 })
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { id: "hw3-error", className: s$b.error, children: error2 })
       ] }),
       /* @__PURE__ */ jsxRuntimeExports.jsx(
         "button",
         {
           id: "hw3-button",
           onClick: addUser,
-          className: s$a.button,
+          className: s$b.button,
           disabled: !name2.trim(),
           children: "add"
         }
       )
     ] }),
-    lastUserName && /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$a.greeting, children: [
+    lastUserName && /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$b.greeting, children: [
       "Привет ",
       /* @__PURE__ */ jsxRuntimeExports.jsx("span", { id: "hw3-last-user", children: lastUserName }),
       "!"
@@ -9834,7 +9834,7 @@ const pureOnEnter = (e, addUser) => {
   }
 };
 const GreetingContainer = ({
-  users,
+  users: users2,
   addUserCallback
 }) => {
   var _a;
@@ -9855,8 +9855,8 @@ const GreetingContainer = ({
   const onEnter = (e) => {
     pureOnEnter(e, addUser);
   };
-  const totalUsers = users.length;
-  const lastUserName = (_a = users[users.length - 1]) == null ? void 0 : _a.name;
+  const totalUsers = users2.length;
+  const lastUserName = (_a = users2[users2.length - 1]) == null ? void 0 : _a.name;
   return /* @__PURE__ */ jsxRuntimeExports.jsx(
     Greeting,
     {
@@ -9871,28 +9871,28 @@ const GreetingContainer = ({
     }
   );
 };
-const pureAddUserCallback = (name2, setUsers, users) => {
+const pureAddUserCallback = (name2, setUsers, users2) => {
   const user = {
     _id: v1(),
     name: name2
   };
-  setUsers([...users, user]);
+  setUsers([...users2, user]);
 };
 const HW3 = () => {
-  const [users, setUsers] = reactExports.useState([]);
+  const [users2, setUsers] = reactExports.useState([]);
   const addUserCallback = (name2) => {
-    pureAddUserCallback(name2, setUsers, users);
+    pureAddUserCallback(name2, setUsers, users2);
   };
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw3", children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$i.hwTitle, children: "Homework #3" }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$i.hw, children: /* @__PURE__ */ jsxRuntimeExports.jsx(GreetingContainer, { users, addUserCallback }) })
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$j.hwTitle, children: "Homework #3" }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$j.hw, children: /* @__PURE__ */ jsxRuntimeExports.jsx(GreetingContainer, { users: users2, addUserCallback }) })
   ] });
 };
 const stand = "_stand_18a1s_1";
 const inputs = "_inputs_18a1s_13";
 const buttons = "_buttons_18a1s_25";
 const checkboxes = "_checkboxes_18a1s_37";
-const s$9 = {
+const s$a = {
   stand,
   inputs,
   buttons,
@@ -9903,7 +9903,7 @@ const inputWrapper = "_inputWrapper_1dtyi_25";
 const superInput = "_superInput_1dtyi_35";
 const errorInput = "_errorInput_1dtyi_39";
 const error = "_error_1dtyi_39";
-const s$8 = {
+const s$9 = {
   input: input$1,
   inputWrapper,
   superInput,
@@ -9932,9 +9932,9 @@ const SuperInputText = ({
       onEnter();
     }
   };
-  const finalSpanClassName = `${s$8.error} ${spanClassName2 ? spanClassName2 : ""}`;
-  const finalInputClassName = `${s$8.input} ${error2 ? s$8.errorInput : s$8.superInput} ${className ? className : ""}`;
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$8.inputWrapper, children: [
+  const finalSpanClassName = `${s$9.error} ${spanClassName2 ? spanClassName2 : ""}`;
+  const finalInputClassName = `${s$9.input} ${error2 ? s$9.errorInput : s$9.superInput} ${className ? className : ""}`;
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$9.inputWrapper, children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx(
       "input",
       {
@@ -9954,7 +9954,7 @@ const SuperInputText = ({
 const label$1 = "_label_p1i75_1";
 const checkbox = "_checkbox_p1i75_19";
 const spanClassName = "_spanClassName_p1i75_81";
-const s$7 = {
+const s$8 = {
   label: label$1,
   checkbox,
   spanClassName
@@ -9974,8 +9974,8 @@ const SuperCheckbox = ({
     onChange == null ? void 0 : onChange(e);
     onChangeChecked == null ? void 0 : onChangeChecked(e.currentTarget.checked);
   };
-  const finalInputClassName = `${s$7.checkbox} ${className ? className : ""}`;
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs("label", { className: s$7.label, children: [
+  const finalInputClassName = `${s$8.checkbox} ${className ? className : ""}`;
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("label", { className: s$8.label, children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx(
       "input",
       {
@@ -9986,14 +9986,14 @@ const SuperCheckbox = ({
         ...restProps
       }
     ),
-    children && /* @__PURE__ */ jsxRuntimeExports.jsx("span", { id: id ? id + "-span" : void 0, className: s$7.spanClassName, children })
+    children && /* @__PURE__ */ jsxRuntimeExports.jsx("span", { id: id ? id + "-span" : void 0, className: s$8.spanClassName, children })
   ] });
 };
 const button = "_button_fnd2u_1";
 const disabled = "_disabled_fnd2u_29";
 const secondary = "_secondary_fnd2u_39";
 const red = "_red_fnd2u_59";
-const s$6 = {
+const s$7 = {
   button,
   disabled,
   secondary,
@@ -10007,7 +10007,7 @@ const SuperButton = ({
   ...restProps
   // все остальные пропсы попадут в объект restProps, там же будет children
 }) => {
-  const finalClassName = `${s$6.button} ${disabled2 ? s$6.disabled : ""} ${xType === "red" ? s$6.red : xType === "secondary" ? s$6.secondary : s$6.default} ${className ? className : ""}`;
+  const finalClassName = `${s$7.button} ${disabled2 ? s$7.disabled : ""} ${xType === "red" ? s$7.red : xType === "secondary" ? s$7.secondary : s$7.default} ${className ? className : ""}`;
   return /* @__PURE__ */ jsxRuntimeExports.jsx(
     "button",
     {
@@ -10021,8 +10021,8 @@ const Stand = () => {
   const [stateForAllInputs, setValue] = reactExports.useState("");
   const [error2, setError] = reactExports.useState("");
   const [stateForAllCheckboxes, setChecked] = reactExports.useState(false);
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw4-stand", className: s$9.stand, children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$9.inputs, children: [
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw4-stand", className: s$a.stand, children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$a.inputs, children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx("div", { children: /* @__PURE__ */ jsxRuntimeExports.jsx(
         SuperInputText,
         {
@@ -10045,13 +10045,13 @@ const Stand = () => {
         }
       ) })
     ] }),
-    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$9.buttons, children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$a.buttons, children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx("div", { children: /* @__PURE__ */ jsxRuntimeExports.jsx(SuperButton, { id: "hw4-super-button-default", children: "default" }) }),
       /* @__PURE__ */ jsxRuntimeExports.jsx("div", { children: /* @__PURE__ */ jsxRuntimeExports.jsx(SuperButton, { id: "hw4-super-button-red", xType: "red", children: "red" }) }),
       /* @__PURE__ */ jsxRuntimeExports.jsx("div", { children: /* @__PURE__ */ jsxRuntimeExports.jsx(SuperButton, { id: "hw4-super-button-disabled", xType: "red", disabled: true, children: "disabled" }) }),
       /* @__PURE__ */ jsxRuntimeExports.jsx("div", { children: /* @__PURE__ */ jsxRuntimeExports.jsx(SuperButton, { id: "hw4-super-button-secondary", xType: "secondary", children: "secondary" }) })
     ] }),
-    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$9.checkboxes, children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$a.checkboxes, children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx("div", { children: /* @__PURE__ */ jsxRuntimeExports.jsx(
         SuperCheckbox,
         {
@@ -10074,8 +10074,8 @@ const Stand = () => {
 };
 const HW4 = () => {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw4", children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$i.hwTitle, children: "Homework #4" }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$i.hw, children: /* @__PURE__ */ jsxRuntimeExports.jsx(Stand, {}) })
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$j.hwTitle, children: "Homework #4" }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$j.hw, children: /* @__PURE__ */ jsxRuntimeExports.jsx(Stand, {}) })
   ] });
 };
 function PreJunior() {
@@ -10090,7 +10090,7 @@ const spanBlock = "_spanBlock_b4xn0_1";
 const span = "_span_b4xn0_1";
 const input = "_input_b4xn0_35";
 const pen = "_pen_b4xn0_65";
-const s$5 = {
+const s$6 = {
   spanBlock,
   span,
   input,
@@ -10116,18 +10116,18 @@ const SuperEditableSpan = ({
   const onDoubleClickCallBack = (e) => {
     onDoubleClick == null ? void 0 : onDoubleClick(e);
   };
-  const spanClassName2 = s$5.span + (className ? " " + className : "");
+  const spanClassName2 = s$6.span + (className ? " " + className : "");
   return /* @__PURE__ */ jsxRuntimeExports.jsx(jsxRuntimeExports.Fragment, { children: editMode ? /* @__PURE__ */ jsxRuntimeExports.jsx(
     SuperInputText,
     {
       autoFocus: autoFocus || true,
       onBlur: onBlurCallback,
       onEnter: onEnterCallback,
-      className: s$5.input,
+      className: s$6.input,
       ...restProps
     }
-  ) : /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$5.spanBlock, children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsx("img", { src: editIcon, className: s$5.pen, alt: "edit" }),
+  ) : /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$6.spanBlock, children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx("img", { src: editIcon, className: s$6.pen, alt: "edit" }),
     /* @__PURE__ */ jsxRuntimeExports.jsx(
       "span",
       {
@@ -10149,10 +10149,10 @@ function restoreState(key, defaultState) {
   if (stateAsString !== null) state = JSON.parse(stateAsString);
   return state;
 }
-const buttonsContainer = "_buttonsContainer_kmbev_1";
+const buttonsContainer$1 = "_buttonsContainer_kmbev_1";
 const editableSpanContainer = "_editableSpanContainer_kmbev_11";
-const s$4 = {
-  buttonsContainer,
+const s$5 = {
+  buttonsContainer: buttonsContainer$1,
   editableSpanContainer
 };
 const HW6 = () => {
@@ -10182,9 +10182,9 @@ const HW6 = () => {
     setValue(restoredValue);
   };
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw6", children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$i.hwTitle, children: "Homework #6" }),
-    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$i.hw, children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$4.editableSpanContainer, children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$j.hwTitle, children: "Homework #6" }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$j.hw, children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$5.editableSpanContainer, children: /* @__PURE__ */ jsxRuntimeExports.jsx(
         SuperEditableSpan,
         {
           id: "hw6-spanable-input",
@@ -10201,7 +10201,7 @@ const HW6 = () => {
           editMode
         }
       ) }),
-      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$4.buttonsContainer, children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$5.buttonsContainer, children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx(SuperButton, { id: "hw6-save", onClick: save, children: "Save to ls" }),
         /* @__PURE__ */ jsxRuntimeExports.jsx(SuperButton, { id: "hw6-restore", onClick: restore, xType: "secondary", children: "Get from ls" })
       ] })
@@ -10210,7 +10210,7 @@ const HW6 = () => {
 };
 const select = "_select_1y4rj_1";
 const option = "_option_1y4rj_41";
-const s$3 = {
+const s$4 = {
   select,
   option
 };
@@ -10225,7 +10225,7 @@ const SuperSelect = ({
     "option",
     {
       id: "hw7-option-" + o.id,
-      className: s$3.option,
+      className: s$4.option,
       value: o.id,
       children: o.value
     },
@@ -10237,7 +10237,7 @@ const SuperSelect = ({
       onChangeOption(+e.currentTarget.value);
     }
   };
-  const finalSelectClassName = s$3.select + (className ? " " + className : "");
+  const finalSelectClassName = s$4.select + (className ? " " + className : "");
   return /* @__PURE__ */ jsxRuntimeExports.jsx(
     "select",
     {
@@ -10251,7 +10251,7 @@ const SuperSelect = ({
 const radio = "_radio_4vf6o_1";
 const label = "_label_4vf6o_45";
 const options = "_options_4vf6o_55";
-const s$2 = {
+const s$3 = {
   radio,
   label,
   options
@@ -10274,9 +10274,9 @@ const SuperRadio = ({
       onChangeOption(+e.target.value);
     }
   };
-  const finalRadioClassName = s$2.radio + (className ? " " + className : "");
-  const spanClassName2 = s$2.span + ((spanProps == null ? void 0 : spanProps.className) ? " " + spanProps.className : "");
-  const mappedOptions = options2 ? options2.map((o) => /* @__PURE__ */ jsxRuntimeExports.jsxs("label", { className: s$2.label, children: [
+  const finalRadioClassName = s$3.radio + (className ? " " + className : "");
+  const spanClassName2 = s$3.span + ((spanProps == null ? void 0 : spanProps.className) ? " " + spanProps.className : "");
+  const mappedOptions = options2 ? options2.map((o) => /* @__PURE__ */ jsxRuntimeExports.jsxs("label", { className: s$3.label, children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx(
       "input",
       {
@@ -10300,11 +10300,11 @@ const SuperRadio = ({
       }
     )
   ] }, name2 + "-" + o.id)) : [];
-  return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$2.options, children: mappedOptions });
+  return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$3.options, children: mappedOptions });
 };
-const container = "_container_14hu5_1";
-const s$1 = {
-  container
+const container$1 = "_container_14hu5_1";
+const s$2 = {
+  container: container$1
 };
 const arr = [
   { id: 1, value: "Pre-junior" },
@@ -10314,8 +10314,8 @@ const arr = [
 const HW7 = () => {
   const [value, onChangeOption] = reactExports.useState(1);
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw7", children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$i.hwTitle, children: "Homework #7" }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$i.hw, children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$1.container, children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$j.hwTitle, children: "Homework #7" }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$j.hw, children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$2.container, children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx("div", { children: /* @__PURE__ */ jsxRuntimeExports.jsx(
         SuperSelect,
         {
@@ -10338,10 +10338,117 @@ const HW7 = () => {
     ] }) })
   ] });
 };
+const homeWorkReducer = (state, action) => {
+  switch (action.type) {
+    case "sort": {
+      if (action.payload === "up") {
+        return [...state.sort((a, b) => a.name > b.name ? 1 : -1)];
+      }
+      return [...state.sort((a, b) => b.name > a.name ? 1 : -1)];
+    }
+    case "check": {
+      return state.filter((s2) => s2.age >= 18);
+    }
+    default:
+      return state;
+  }
+};
+const item = "_item_1dary_1";
+const users = "_users_1dary_47";
+const buttonsContainer = "_buttonsContainer_1dary_59";
+const container = "_container_1dary_71";
+const thead = "_thead_1dary_91";
+const nameCol = "_nameCol_1dary_119";
+const ageCol = "_ageCol_1dary_147";
+const s$1 = {
+  item,
+  users,
+  buttonsContainer,
+  container,
+  thead,
+  nameCol,
+  ageCol
+};
+const User = ({ u }) => {
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("tr", { id: "hw8-user-" + u._id + "-" + u.age, className: s$1.item, children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx("td", { id: "hw8-user-name-" + u._id, className: s$1.nameCol, children: u.name }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("td", { id: "hw8-user-age-" + u._id, children: u.age })
+  ] });
+};
+const initialPeople = [
+  // студенты могут поменять имя/возраст/количество объектов, _id должны быть целочисленные
+  { _id: 0, name: "Кот", age: 3 },
+  { _id: 1, name: "Александр", age: 66 },
+  { _id: 2, name: "Коля", age: 16 },
+  { _id: 3, name: "Виктор", age: 44 },
+  { _id: 4, name: "Дмитрий", age: 40 },
+  { _id: 5, name: "Ирина", age: 55 }
+];
+const HW8 = () => {
+  const [people, setPeople] = reactExports.useState(initialPeople);
+  const [currentSort, setCurrentSort] = reactExports.useState("");
+  const finalPeople = people.map((u) => /* @__PURE__ */ jsxRuntimeExports.jsx(User, { u }, u._id));
+  const sortUp = () => {
+    setPeople(homeWorkReducer(initialPeople, { type: "sort", payload: "up" }));
+    setCurrentSort("up");
+  };
+  const sortDown = () => {
+    setPeople(
+      homeWorkReducer(initialPeople, { type: "sort", payload: "down" })
+    );
+    setCurrentSort("down");
+  };
+  const check18 = () => {
+    setPeople(homeWorkReducer(initialPeople, { type: "check", payload: 18 }));
+    setCurrentSort("18");
+  };
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw3", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$j.hwTitle, children: "Homework #8" }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$j.hw, children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$1.container, children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$1.buttonsContainer, children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          SuperButton,
+          {
+            id: "hw8-button-up",
+            onClick: sortUp,
+            xType: currentSort === "up" ? "" : "secondary",
+            children: "Sort up"
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          SuperButton,
+          {
+            id: "hw8-button-down",
+            onClick: sortDown,
+            xType: currentSort === "down" ? "" : "secondary",
+            children: "Sort down"
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          SuperButton,
+          {
+            id: "hw8-button-18",
+            onClick: check18,
+            xType: currentSort === "18" ? "" : "secondary",
+            children: "Check 18+"
+          }
+        )
+      ] }),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("table", { id: "hw8-users", className: s$1.users, children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("thead", { className: s$1.thead, children: /* @__PURE__ */ jsxRuntimeExports.jsxs("tr", { children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("td", { className: s$1.nameCol, children: "Name" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("td", { className: s$1.ageCol, children: "Age" })
+        ] }) }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("tbody", { children: finalPeople })
+      ] })
+    ] }) })
+  ] });
+};
 function Junior() {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw5-page-junior", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx(HW6, {}),
-    /* @__PURE__ */ jsxRuntimeExports.jsx(HW7, {})
+    /* @__PURE__ */ jsxRuntimeExports.jsx(HW7, {}),
+    /* @__PURE__ */ jsxRuntimeExports.jsx(HW8, {})
   ] });
 }
 function JuniorPlus() {
@@ -10365,13 +10472,13 @@ const Header = ({ handleOpen }) => {
   const location = useLocation();
   const currentPath = location.pathname;
   const pageName = currentPath === PATH.PRE_JUNIOR ? "Pre-junior" : currentPath === PATH.JUNIOR ? "Junior" : currentPath === PATH.JUNIOR_PLUS ? "Junior Plus" : "Error";
-  return /* @__PURE__ */ jsxRuntimeExports.jsx(jsxRuntimeExports.Fragment, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw5-header", className: s$h.header, children: [
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(jsxRuntimeExports.Fragment, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw5-header", className: s$i.header, children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx(
       "img",
       {
         src: burgerIcon,
         id: "hw5-burger-menu",
-        className: s$h.burgerMenuIcon,
+        className: s$i.burgerMenuIcon,
         onClick: handleOpen,
         alt: "open menu"
       }
@@ -10454,9 +10561,9 @@ function HW5() {
   return /* @__PURE__ */ jsxRuntimeExports.jsx(HashRouter, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(Layout, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(Pages, {}) }) });
 }
 function App() {
-  return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$i.App, children: /* @__PURE__ */ jsxRuntimeExports.jsx(HW5, {}) });
+  return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$j.App, children: /* @__PURE__ */ jsxRuntimeExports.jsx(HW5, {}) });
 }
 clientExports.createRoot(document.getElementById("root")).render(
   /* @__PURE__ */ jsxRuntimeExports.jsx(jsxRuntimeExports.Fragment, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(App, {}) })
 );
-//# sourceMappingURL=index-2wR9cYND.js.map
+//# sourceMappingURL=index-BWWTgZHE.js.map
