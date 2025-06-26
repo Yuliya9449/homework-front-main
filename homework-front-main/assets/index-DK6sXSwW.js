@@ -10344,7 +10344,10 @@ const homeWorkReducer = (state, action) => {
       if (action.payload === "up") {
         return [...state.sort((a, b) => a.name > b.name ? 1 : -1)];
       }
-      return [...state.sort((a, b) => b.name > a.name ? 1 : -1)];
+      if (action.payload === "down") {
+        return [...state.sort((a, b) => b.name > a.name ? 1 : -1)];
+      }
+      return state;
     }
     case "check": {
       return state.filter((s2) => s2.age >= 18);
@@ -10566,4 +10569,4 @@ function App() {
 clientExports.createRoot(document.getElementById("root")).render(
   /* @__PURE__ */ jsxRuntimeExports.jsx(jsxRuntimeExports.Fragment, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(App, {}) })
 );
-//# sourceMappingURL=index-BWWTgZHE.js.map
+//# sourceMappingURL=index-DK6sXSwW.js.map
