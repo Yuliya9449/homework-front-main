@@ -29,7 +29,7 @@
   "exclude": [
     // "src/HW_2/src/s2-homeworks/hw06",
     // "src/HW_2/src/s2-homeworks/hw07",
-    "src/HW_2/src/s2-homeworks/hw08",
+    // "src/HW_2/src/s2-homeworks/hw08",
     "src/HW_2/src/s2-homeworks/hw09",
     "src/HW_2/src/s2-homeworks/hw10",
     "src/HW_2/src/index.tsx",
