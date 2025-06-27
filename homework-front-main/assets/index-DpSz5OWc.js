@@ -10392,12 +10392,12 @@ const HW8 = () => {
   const [currentSort, setCurrentSort] = reactExports.useState("");
   const finalPeople = people.map((u) => /* @__PURE__ */ jsxRuntimeExports.jsx(User, { u }, u._id));
   const sortUp = () => {
-    setPeople(homeWorkReducer(initialPeople, { type: "sort", payload: "up" }));
+    setPeople(homeWorkReducer(people, { type: "sort", payload: "up" }));
     setCurrentSort("up");
   };
   const sortDown = () => {
     setPeople(
-      homeWorkReducer(initialPeople, { type: "sort", payload: "down" })
+      homeWorkReducer(people, { type: "sort", payload: "down" })
     );
     setCurrentSort("down");
   };
@@ -10569,4 +10569,4 @@ function App() {
 clientExports.createRoot(document.getElementById("root")).render(
   /* @__PURE__ */ jsxRuntimeExports.jsx(jsxRuntimeExports.Fragment, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(App, {}) })
 );
-//# sourceMappingURL=index-DK6sXSwW.js.map
+//# sourceMappingURL=index-DpSz5OWc.js.map
