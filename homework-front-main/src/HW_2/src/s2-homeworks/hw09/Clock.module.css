@@ -1,14 +1,22 @@
-.buttonsContainer {
-}
-
 .clock {
+  padding: 20px 0;
 }
 
 .watch {
+  font-size: 20px;
 }
 
 .watch strong {
+  font-weight: 600;
 }
 
 .more {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.buttonsContainer {
+  padding-top: 20px;
+  display: flex;
+  gap: 20px;
 }
