@@ -7048,10 +7048,10 @@ function requireClient() {
   return client;
 }
 var clientExports = requireClient();
-const App$1 = "_App_1td2w_4";
-const hw = "_hw_1td2w_33";
-const hwTitle = "_hwTitle_1td2w_40";
-const s$k = {
+const App$1 = "_App_1k9o1_4";
+const hw = "_hw_1k9o1_33";
+const hwTitle = "_hwTitle_1k9o1_41";
+const s$l = {
   App: App$1,
   hw,
   hwTitle
@@ -7864,7 +7864,7 @@ function useLocation() {
   return reactExports.useContext(LocationContext).location;
 }
 var navigateEffectWarning = `You should call navigate() in a React.useEffect(), not when your component is first rendered.`;
-function useIsomorphicLayoutEffect(cb) {
+function useIsomorphicLayoutEffect$1(cb) {
   let isStatic = reactExports.useContext(NavigationContext).static;
   if (!isStatic) {
     reactExports.useLayoutEffect(cb);
@@ -7887,7 +7887,7 @@ function useNavigateUnstable() {
   let { pathname: locationPathname } = useLocation();
   let routePathnamesJson = JSON.stringify(getResolveToMatches(matches));
   let activeRef = reactExports.useRef(false);
-  useIsomorphicLayoutEffect(() => {
+  useIsomorphicLayoutEffect$1(() => {
     activeRef.current = true;
   });
   let navigate = reactExports.useCallback(
@@ -8281,7 +8281,7 @@ function useNavigateStable() {
     /* UseNavigateStable */
   );
   let activeRef = reactExports.useRef(false);
-  useIsomorphicLayoutEffect(() => {
+  useIsomorphicLayoutEffect$1(() => {
     activeRef.current = true;
   });
   let navigate = reactExports.useCallback(
@@ -9325,19 +9325,19 @@ function useViewTransitionState(to, opts = {}) {
 const burgerIcon = "data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M20.05%2011H3.95C3.42533%2011%203%2011.4253%203%2011.95V12.05C3%2012.5747%203.42533%2013%203.95%2013H20.05C20.5747%2013%2021%2012.5747%2021%2012.05V11.95C21%2011.4253%2020.5747%2011%2020.05%2011Z'%20fill='black'/%3e%3cpath%20d='M20.05%2016H3.95C3.42533%2016%203%2016.4253%203%2016.95V17.05C3%2017.5747%203.42533%2018%203.95%2018H20.05C20.5747%2018%2021%2017.5747%2021%2017.05V16.95C21%2016.4253%2020.5747%2016%2020.05%2016Z'%20fill='black'/%3e%3cpath%20d='M20.05%206H3.95C3.42533%206%203%206.42533%203%206.95V7.05C3%207.57467%203.42533%208%203.95%208H20.05C20.5747%208%2021%207.57467%2021%207.05V6.95C21%206.42533%2020.5747%206%2020.05%206Z'%20fill='black'/%3e%3c/svg%3e";
 const burgerMenuIcon = "_burgerMenuIcon_1imfc_1";
 const header = "_header_1imfc_7";
-const s$j = {
+const s$k = {
   burgerMenuIcon,
   header
 };
 const error404$1 = "_error404_cr85g_1";
 const wrapper = "_wrapper_cr85g_6";
-const s$i = {
+const s$j = {
   error404: error404$1,
   wrapper
 };
 const error404 = "" + new URL("404-C1TvcHzi.svg", import.meta.url).href;
 const Error404 = () => {
-  return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { id: "hw5-page-404", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$i.wrapper, children: /* @__PURE__ */ jsxRuntimeExports.jsx("img", { src: error404, alt: "404", className: s$i.error404 }) }) });
+  return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { id: "hw5-page-404", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$j.wrapper, children: /* @__PURE__ */ jsxRuntimeExports.jsx("img", { src: error404, alt: "404", className: s$j.error404 }) }) });
 };
 const message = "_message_1k515_1";
 const imageAndText = "_imageAndText_1k515_12";
@@ -9345,7 +9345,7 @@ const text$1 = "_text_1k515_24";
 const name$1 = "_name_1k515_52";
 const messageText = "_messageText_1k515_56";
 const time = "_time_1k515_60";
-const s$h = {
+const s$i = {
   message,
   imageAndText,
   text: text$1,
@@ -9354,8 +9354,8 @@ const s$h = {
   time
 };
 const Message = (props) => {
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw1-message-" + props.message.id, className: s$h.message, children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$h.imageAndText, children: [
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw1-message-" + props.message.id, className: s$i.message, children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$i.imageAndText, children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx(
         "img",
         {
@@ -9363,18 +9363,18 @@ const Message = (props) => {
           src: props.message.user.avatar
         }
       ),
-      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$h.text, children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { id: "hw1-name-" + props.message.id, className: s$h.name, children: props.message.user.name }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("pre", { id: "hw1-text-" + props.message.id, className: s$h.messageText, children: props.message.message.text })
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$i.text, children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { id: "hw1-name-" + props.message.id, className: s$i.name, children: props.message.user.name }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("pre", { id: "hw1-text-" + props.message.id, className: s$i.messageText, children: props.message.message.text })
       ] })
     ] }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { id: "hw1-time-" + props.message.id, className: s$h.time, children: props.message.message.time })
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { id: "hw1-time-" + props.message.id, className: s$i.time, children: props.message.message.time })
   ] });
 };
 const sendForm = "_sendForm_4le5a_1";
 const textarea = "_textarea_4le5a_9";
 const button$3 = "_button_4le5a_42";
-const s$g = {
+const s$h = {
   sendForm,
   textarea,
   button: button$3
@@ -9412,12 +9412,12 @@ const MessageSender = (props) => {
   };
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [
     messages.map((m) => /* @__PURE__ */ jsxRuntimeExports.jsx(M, { message: m }, "message" + m.id)),
-    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw1-send-message-form", className: s$g.sendForm, children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw1-send-message-form", className: s$h.sendForm, children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx(
         "textarea",
         {
           id: "hw1-textarea",
-          className: s$g.textarea,
+          className: s$h.textarea,
           ref: textareaRef,
           title: "Shift+Enter for send",
           placeholder: "Type your message",
@@ -9430,7 +9430,7 @@ const MessageSender = (props) => {
         "button",
         {
           id: "hw1-button",
-          className: s$g.button,
+          className: s$h.button,
           onClick: addMessage,
           children: "Send"
         }
@@ -9444,7 +9444,7 @@ const friendText = "_friendText_9n20o_23";
 const friendName = "_friendName_9n20o_50";
 const friendMessageText = "_friendMessageText_9n20o_54";
 const friendTime = "_friendTime_9n20o_59";
-const s$f = {
+const s$g = {
   friendMessage,
   friendImageAndText,
   friendText,
@@ -9457,9 +9457,9 @@ const FriendMessage = (props) => {
     "div",
     {
       id: "hw1-friend-message-" + props.message.id,
-      className: s$f.friendMessage,
+      className: s$g.friendMessage,
       children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$f.friendImageAndText, children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$g.friendImageAndText, children: [
           /* @__PURE__ */ jsxRuntimeExports.jsx(
             "img",
             {
@@ -9467,12 +9467,12 @@ const FriendMessage = (props) => {
               src: props.message.user.avatar
             }
           ),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$f.friendText, children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$g.friendText, children: [
             /* @__PURE__ */ jsxRuntimeExports.jsx(
               "div",
               {
                 id: "hw1-friend-name-" + props.message.id,
-                className: s$f.friendName,
+                className: s$g.friendName,
                 children: props.message.user.name
               }
             ),
@@ -9480,13 +9480,13 @@ const FriendMessage = (props) => {
               "pre",
               {
                 id: "hw1-friend-text-" + props.message.id,
-                className: s$f.friendMessageText,
+                className: s$g.friendMessageText,
                 children: props.message.message.text
               }
             )
           ] })
         ] }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { id: "hw1-friend-time-" + props.message.id, className: s$f.friendTime, children: props.message.message.time })
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { id: "hw1-friend-time-" + props.message.id, className: s$g.friendTime, children: props.message.message.time })
       ]
     }
   );
@@ -9524,8 +9524,8 @@ const friendMessage0 = {
 };
 const HW1 = () => {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw1", children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$k.hwTitle, children: "Homework #1" }),
-    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$k.hw, children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$l.hwTitle, children: "Homework #1" }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$l.hw, children: [
       /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx(Message, { message: message0 }),
         /* @__PURE__ */ jsxRuntimeExports.jsx(FriendMessage, { message: friendMessage0 })
@@ -9537,7 +9537,7 @@ const HW1 = () => {
 const affair = "_affair_otgf0_1";
 const name = "_name_otgf0_10";
 const closeButton = "_closeButton_otgf0_18";
-const s$e = {
+const s$f = {
   affair,
   name,
   closeButton
@@ -9550,7 +9550,7 @@ const middle = "_middle_1a9zw_19";
 const button$2 = "_button_1a9zw_1";
 const active$1 = "_active_1a9zw_45";
 const affairs = "_affairs_1a9zw_50";
-const s$d = {
+const s$e = {
   buttonContainer,
   all,
   low,
@@ -9564,9 +9564,9 @@ function Affair(props) {
   const deleteCallback = () => {
     props.deleteAffairCallback(props.affair._id);
   };
-  const nameClass = s$e.name + " " + s$d[props.affair.priority];
-  const buttonClass = s$e.closeButton + " " + s$d[props.affair.priority];
-  const affairClass = s$e.affair + " " + s$d[props.affair.priority];
+  const nameClass = s$f.name + " " + s$e[props.affair.priority];
+  const buttonClass = s$f.closeButton + " " + s$e[props.affair.priority];
+  const affairClass = s$f.affair + " " + s$e[props.affair.priority];
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw2-affair-" + props.affair._id, className: affairClass, children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx("div", { id: "hw2-name-" + props.affair._id, className: nameClass, children: props.affair.name }),
     /* @__PURE__ */ jsxRuntimeExports.jsx("div", { id: "hw2-priority-" + props.affair._id, hidden: true, children: props.affair.priority }),
@@ -9594,10 +9594,10 @@ function Affairs(props) {
   const setLow = () => {
     props.setFilter("low");
   };
-  const cnAll = s$d.button + " " + s$d.all + (props.filter === "all" ? " " + s$d.active : "");
-  const cnHigh = s$d.button + " " + s$d.high + (props.filter === "high" ? " " + s$d.active : "");
-  const cnMiddle = s$d.button + " " + s$d.middle + (props.filter === "middle" ? " " + s$d.active : "");
-  const cnLow = s$d.button + " " + s$d.low + (props.filter === "low" ? " " + s$d.active : "");
+  const cnAll = s$e.button + " " + s$e.all + (props.filter === "all" ? " " + s$e.active : "");
+  const cnHigh = s$e.button + " " + s$e.high + (props.filter === "high" ? " " + s$e.active : "");
+  const cnMiddle = s$e.button + " " + s$e.middle + (props.filter === "middle" ? " " + s$e.active : "");
+  const cnLow = s$e.button + " " + s$e.low + (props.filter === "low" ? " " + s$e.active : "");
   const mappedAffairs = props.data.map((a) => /* @__PURE__ */ jsxRuntimeExports.jsx(
     Affair,
     {
@@ -9607,7 +9607,7 @@ function Affairs(props) {
     a._id
   ));
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$d.buttonContainer, children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$e.buttonContainer, children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx("button", { id: "hw2-button-all", onClick: setAll, className: cnAll, children: "All" }),
       /* @__PURE__ */ jsxRuntimeExports.jsx("button", { id: "hw2-button-high", onClick: setHigh, className: cnHigh, children: "High" }),
       /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -9621,7 +9621,7 @@ function Affairs(props) {
       ),
       /* @__PURE__ */ jsxRuntimeExports.jsx("button", { id: "hw2-button-low", onClick: setLow, className: cnLow, children: "Low" })
     ] }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$d.affairs, children: mappedAffairs })
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$e.affairs, children: mappedAffairs })
   ] });
 }
 const defaultAffairs = [
@@ -9650,8 +9650,8 @@ function HW2() {
     setAffairs((prevState) => deleteAffair(prevState, _id));
   };
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw2", children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$k.hwTitle, children: "Homework #2" }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$k.hw, children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$l.hwTitle, children: "Homework #2" }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$l.hw, children: /* @__PURE__ */ jsxRuntimeExports.jsx(
       Affairs,
       {
         data: filteredAffairs,
@@ -9755,7 +9755,7 @@ const errorInput$1 = "_errorInput_zkg7w_35";
 const button$1 = "_button_zkg7w_40";
 const text = "_text_zkg7w_64";
 const greeting = "_greeting_zkg7w_1";
-const s$c = {
+const s$d = {
   greetingForm,
   inputAndButtonContainer,
   error: error$1,
@@ -9775,13 +9775,13 @@ const Greeting = ({
   totalUsers,
   lastUserName
 }) => {
-  const inputClass = `${s$c.input} ${error2 ? s$c.errorInput : ""}`;
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw3-form", className: s$c.greetingForm, children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$c.text, children: [
+  const inputClass = `${s$d.input} ${error2 ? s$d.errorInput : ""}`;
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw3-form", className: s$d.greetingForm, children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$d.text, children: [
       "Людей добавили: ",
       /* @__PURE__ */ jsxRuntimeExports.jsx("span", { id: "hw3-users-total", children: totalUsers })
     ] }),
-    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$c.inputAndButtonContainer, children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$d.inputAndButtonContainer, children: [
       /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx(
           "input",
@@ -9794,20 +9794,20 @@ const Greeting = ({
             onBlur
           }
         ),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { id: "hw3-error", className: s$c.error, children: error2 })
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { id: "hw3-error", className: s$d.error, children: error2 })
       ] }),
       /* @__PURE__ */ jsxRuntimeExports.jsx(
         "button",
         {
           id: "hw3-button",
           onClick: addUser,
-          className: s$c.button,
+          className: s$d.button,
           disabled: !name2.trim(),
           children: "add"
         }
       )
     ] }),
-    lastUserName && /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$c.greeting, children: [
+    lastUserName && /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$d.greeting, children: [
       "Привет ",
       /* @__PURE__ */ jsxRuntimeExports.jsx("span", { id: "hw3-last-user", children: lastUserName }),
       "!"
@@ -9884,15 +9884,15 @@ const HW3 = () => {
     pureAddUserCallback(name2, setUsers, users2);
   };
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw3", children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$k.hwTitle, children: "Homework #3" }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$k.hw, children: /* @__PURE__ */ jsxRuntimeExports.jsx(GreetingContainer, { users: users2, addUserCallback }) })
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$l.hwTitle, children: "Homework #3" }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$l.hw, children: /* @__PURE__ */ jsxRuntimeExports.jsx(GreetingContainer, { users: users2, addUserCallback }) })
   ] });
 };
 const stand = "_stand_1sdjo_1";
 const inputs = "_inputs_1sdjo_7";
 const buttons = "_buttons_1sdjo_13";
 const checkboxes = "_checkboxes_1sdjo_19";
-const s$b = {
+const s$c = {
   stand,
   inputs,
   buttons,
@@ -9903,7 +9903,7 @@ const inputWrapper = "_inputWrapper_w241n_13";
 const superInput = "_superInput_w241n_18";
 const errorInput = "_errorInput_w241n_20";
 const error = "_error_w241n_20";
-const s$a = {
+const s$b = {
   input: input$1,
   inputWrapper,
   superInput,
@@ -9932,9 +9932,9 @@ const SuperInputText = ({
       onEnter();
     }
   };
-  const finalSpanClassName = `${s$a.error} ${spanClassName2 ? spanClassName2 : ""}`;
-  const finalInputClassName = `${s$a.input} ${error2 ? s$a.errorInput : s$a.superInput} ${className ? className : ""}`;
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$a.inputWrapper, children: [
+  const finalSpanClassName = `${s$b.error} ${spanClassName2 ? spanClassName2 : ""}`;
+  const finalInputClassName = `${s$b.input} ${error2 ? s$b.errorInput : s$b.superInput} ${className ? className : ""}`;
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$b.inputWrapper, children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx(
       "input",
       {
@@ -9954,7 +9954,7 @@ const SuperInputText = ({
 const label$1 = "_label_1pr07_1";
 const checkbox = "_checkbox_1pr07_10";
 const spanClassName = "_spanClassName_1pr07_41";
-const s$9 = {
+const s$a = {
   label: label$1,
   checkbox,
   spanClassName
@@ -9974,8 +9974,8 @@ const SuperCheckbox = ({
     onChange == null ? void 0 : onChange(e);
     onChangeChecked == null ? void 0 : onChangeChecked(e.currentTarget.checked);
   };
-  const finalInputClassName = `${s$9.checkbox} ${className ? className : ""}`;
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs("label", { className: s$9.label, children: [
+  const finalInputClassName = `${s$a.checkbox} ${className ? className : ""}`;
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("label", { className: s$a.label, children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx(
       "input",
       {
@@ -9986,14 +9986,14 @@ const SuperCheckbox = ({
         ...restProps
       }
     ),
-    children && /* @__PURE__ */ jsxRuntimeExports.jsx("span", { id: id ? id + "-span" : void 0, className: s$9.spanClassName, children })
+    children && /* @__PURE__ */ jsxRuntimeExports.jsx("span", { id: id ? id + "-span" : void 0, className: s$a.spanClassName, children })
   ] });
 };
 const button = "_button_1fekd_1";
 const disabled = "_disabled_1fekd_15";
 const secondary = "_secondary_1fekd_20";
 const red = "_red_1fekd_30";
-const s$8 = {
+const s$9 = {
   button,
   disabled,
   secondary,
@@ -10007,7 +10007,7 @@ const SuperButton = ({
   ...restProps
   // все остальные пропсы попадут в объект restProps, там же будет children
 }) => {
-  const finalClassName = `${s$8.button} ${disabled2 ? s$8.disabled : ""} ${xType === "red" ? s$8.red : xType === "secondary" ? s$8.secondary : s$8.default} ${className ? className : ""}`;
+  const finalClassName = `${s$9.button} ${disabled2 ? s$9.disabled : ""} ${xType === "red" ? s$9.red : xType === "secondary" ? s$9.secondary : s$9.default} ${className ? className : ""}`;
   return /* @__PURE__ */ jsxRuntimeExports.jsx(
     "button",
     {
@@ -10021,8 +10021,8 @@ const Stand = () => {
   const [stateForAllInputs, setValue] = reactExports.useState("");
   const [error2, setError] = reactExports.useState("");
   const [stateForAllCheckboxes, setChecked] = reactExports.useState(false);
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw4-stand", className: s$b.stand, children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$b.inputs, children: [
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw4-stand", className: s$c.stand, children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$c.inputs, children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx("div", { children: /* @__PURE__ */ jsxRuntimeExports.jsx(
         SuperInputText,
         {
@@ -10045,13 +10045,13 @@ const Stand = () => {
         }
       ) })
     ] }),
-    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$b.buttons, children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$c.buttons, children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx("div", { children: /* @__PURE__ */ jsxRuntimeExports.jsx(SuperButton, { id: "hw4-super-button-default", children: "default" }) }),
       /* @__PURE__ */ jsxRuntimeExports.jsx("div", { children: /* @__PURE__ */ jsxRuntimeExports.jsx(SuperButton, { id: "hw4-super-button-red", xType: "red", children: "red" }) }),
       /* @__PURE__ */ jsxRuntimeExports.jsx("div", { children: /* @__PURE__ */ jsxRuntimeExports.jsx(SuperButton, { id: "hw4-super-button-disabled", xType: "red", disabled: true, children: "disabled" }) }),
       /* @__PURE__ */ jsxRuntimeExports.jsx("div", { children: /* @__PURE__ */ jsxRuntimeExports.jsx(SuperButton, { id: "hw4-super-button-secondary", xType: "secondary", children: "secondary" }) })
     ] }),
-    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$b.checkboxes, children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$c.checkboxes, children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx("div", { children: /* @__PURE__ */ jsxRuntimeExports.jsx(
         SuperCheckbox,
         {
@@ -10074,8 +10074,8 @@ const Stand = () => {
 };
 const HW4 = () => {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw4", children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$k.hwTitle, children: "Homework #4" }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$k.hw, children: /* @__PURE__ */ jsxRuntimeExports.jsx(Stand, {}) })
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$l.hwTitle, children: "Homework #4" }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$l.hw, children: /* @__PURE__ */ jsxRuntimeExports.jsx(Stand, {}) })
   ] });
 };
 function PreJunior() {
@@ -10090,7 +10090,7 @@ const spanBlock = "_spanBlock_jv9ns_1";
 const span = "_span_jv9ns_1";
 const input = "_input_jv9ns_18";
 const pen = "_pen_jv9ns_33";
-const s$7 = {
+const s$8 = {
   spanBlock,
   span,
   input,
@@ -10116,18 +10116,18 @@ const SuperEditableSpan = ({
   const onDoubleClickCallBack = (e) => {
     onDoubleClick == null ? void 0 : onDoubleClick(e);
   };
-  const spanClassName2 = s$7.span + (className ? " " + className : "");
+  const spanClassName2 = s$8.span + (className ? " " + className : "");
   return /* @__PURE__ */ jsxRuntimeExports.jsx(jsxRuntimeExports.Fragment, { children: editMode ? /* @__PURE__ */ jsxRuntimeExports.jsx(
     SuperInputText,
     {
       autoFocus: autoFocus || true,
       onBlur: onBlurCallback,
       onEnter: onEnterCallback,
-      className: s$7.input,
+      className: s$8.input,
       ...restProps
     }
-  ) : /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$7.spanBlock, children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsx("img", { src: editIcon, className: s$7.pen, alt: "edit" }),
+  ) : /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$8.spanBlock, children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx("img", { src: editIcon, className: s$8.pen, alt: "edit" }),
     /* @__PURE__ */ jsxRuntimeExports.jsx(
       "span",
       {
@@ -10151,7 +10151,7 @@ function restoreState(key, defaultState) {
 }
 const buttonsContainer$2 = "_buttonsContainer_2sq63_1";
 const editableSpanContainer = "_editableSpanContainer_2sq63_6";
-const s$6 = {
+const s$7 = {
   buttonsContainer: buttonsContainer$2,
   editableSpanContainer
 };
@@ -10182,9 +10182,9 @@ const HW6 = () => {
     setValue(restoredValue);
   };
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw6", children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$k.hwTitle, children: "Homework #6" }),
-    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$k.hw, children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$6.editableSpanContainer, children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$l.hwTitle, children: "Homework #6" }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$l.hw, children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$7.editableSpanContainer, children: /* @__PURE__ */ jsxRuntimeExports.jsx(
         SuperEditableSpan,
         {
           id: "hw6-spanable-input",
@@ -10201,7 +10201,7 @@ const HW6 = () => {
           editMode
         }
       ) }),
-      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$6.buttonsContainer, children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$7.buttonsContainer, children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx(SuperButton, { id: "hw6-save", onClick: save, children: "Save to ls" }),
         /* @__PURE__ */ jsxRuntimeExports.jsx(SuperButton, { id: "hw6-restore", onClick: restore, xType: "secondary", children: "Get from ls" })
       ] })
@@ -10210,7 +10210,7 @@ const HW6 = () => {
 };
 const select = "_select_1qjzt_1";
 const option = "_option_1qjzt_21";
-const s$5 = {
+const s$6 = {
   select,
   option
 };
@@ -10225,7 +10225,7 @@ const SuperSelect = ({
     "option",
     {
       id: "hw7-option-" + o.id,
-      className: s$5.option,
+      className: s$6.option,
       value: o.id,
       children: o.value
     },
@@ -10237,7 +10237,7 @@ const SuperSelect = ({
       onChangeOption(+e.currentTarget.value);
     }
   };
-  const finalSelectClassName = s$5.select + (className ? " " + className : "");
+  const finalSelectClassName = s$6.select + (className ? " " + className : "");
   return /* @__PURE__ */ jsxRuntimeExports.jsx(
     "select",
     {
@@ -10251,7 +10251,7 @@ const SuperSelect = ({
 const radio = "_radio_1v7jl_1";
 const label = "_label_1v7jl_23";
 const options = "_options_1v7jl_28";
-const s$4 = {
+const s$5 = {
   radio,
   label,
   options
@@ -10274,9 +10274,9 @@ const SuperRadio = ({
       onChangeOption(+e.target.value);
     }
   };
-  const finalRadioClassName = s$4.radio + (className ? " " + className : "");
-  const spanClassName2 = s$4.span + ((spanProps == null ? void 0 : spanProps.className) ? " " + spanProps.className : "");
-  const mappedOptions = options2 ? options2.map((o) => /* @__PURE__ */ jsxRuntimeExports.jsxs("label", { className: s$4.label, children: [
+  const finalRadioClassName = s$5.radio + (className ? " " + className : "");
+  const spanClassName2 = s$5.span + ((spanProps == null ? void 0 : spanProps.className) ? " " + spanProps.className : "");
+  const mappedOptions = options2 ? options2.map((o) => /* @__PURE__ */ jsxRuntimeExports.jsxs("label", { className: s$5.label, children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx(
       "input",
       {
@@ -10300,10 +10300,10 @@ const SuperRadio = ({
       }
     )
   ] }, name2 + "-" + o.id)) : [];
-  return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$4.options, children: mappedOptions });
+  return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$5.options, children: mappedOptions });
 };
 const container$1 = "_container_x6yof_1";
-const s$3 = {
+const s$4 = {
   container: container$1
 };
 const arr = [
@@ -10314,8 +10314,8 @@ const arr = [
 const HW7 = () => {
   const [value, onChangeOption] = reactExports.useState(1);
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw7", children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$k.hwTitle, children: "Homework #7" }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$k.hw, children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$3.container, children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$l.hwTitle, children: "Homework #7" }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$l.hw, children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$4.container, children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx("div", { children: /* @__PURE__ */ jsxRuntimeExports.jsx(
         SuperSelect,
         {
@@ -10363,7 +10363,7 @@ const container = "_container_d3lal_36";
 const thead = "_thead_d3lal_46";
 const nameCol = "_nameCol_d3lal_60";
 const ageCol = "_ageCol_d3lal_74";
-const s$2 = {
+const s$3 = {
   item,
   users,
   buttonsContainer: buttonsContainer$1,
@@ -10373,8 +10373,8 @@ const s$2 = {
   ageCol
 };
 const User = ({ u }) => {
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs("tr", { id: "hw8-user-" + u._id + "-" + u.age, className: s$2.item, children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsx("td", { id: "hw8-user-name-" + u._id, className: s$2.nameCol, children: u.name }),
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("tr", { id: "hw8-user-" + u._id + "-" + u.age, className: s$3.item, children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx("td", { id: "hw8-user-name-" + u._id, className: s$3.nameCol, children: u.name }),
     /* @__PURE__ */ jsxRuntimeExports.jsx("td", { id: "hw8-user-age-" + u._id, children: u.age })
   ] });
 };
@@ -10406,9 +10406,9 @@ const HW8 = () => {
     setCurrentSort("18");
   };
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw3", children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$k.hwTitle, children: "Homework #8" }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$k.hw, children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$2.container, children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$2.buttonsContainer, children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$l.hwTitle, children: "Homework #8" }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$l.hw, children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$3.container, children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$3.buttonsContainer, children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx(
           SuperButton,
           {
@@ -10437,10 +10437,10 @@ const HW8 = () => {
           }
         )
       ] }),
-      /* @__PURE__ */ jsxRuntimeExports.jsxs("table", { id: "hw8-users", className: s$2.users, children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx("thead", { className: s$2.thead, children: /* @__PURE__ */ jsxRuntimeExports.jsxs("tr", { children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx("td", { className: s$2.nameCol, children: "Name" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("td", { className: s$2.ageCol, children: "Age" })
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("table", { id: "hw8-users", className: s$3.users, children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("thead", { className: s$3.thead, children: /* @__PURE__ */ jsxRuntimeExports.jsxs("tr", { children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("td", { className: s$3.nameCol, children: "Name" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("td", { className: s$3.ageCol, children: "Age" })
         ] }) }),
         /* @__PURE__ */ jsxRuntimeExports.jsx("tbody", { children: finalPeople })
       ] })
@@ -10451,7 +10451,7 @@ const clock = "_clock_7d3k1_1";
 const watch = "_watch_7d3k1_5";
 const more = "_more_7d3k1_13";
 const buttonsContainer = "_buttonsContainer_7d3k1_18";
-const s$1 = {
+const s$2 = {
   clock,
   watch,
   more,
@@ -10497,12 +10497,12 @@ const Clock = () => {
   }).format(date) || /* @__PURE__ */ jsxRuntimeExports.jsx("br", {});
   const stringDay = new Intl.DateTimeFormat("en", { weekday: "long" }).format(date) || /* @__PURE__ */ jsxRuntimeExports.jsx("br", {});
   const stringMonth = new Intl.DateTimeFormat("en", { month: "long" }).format(date) || /* @__PURE__ */ jsxRuntimeExports.jsx("br", {});
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$1.clock, children: [
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$2.clock, children: [
     /* @__PURE__ */ jsxRuntimeExports.jsxs(
       "div",
       {
         id: "hw9-watch",
-        className: s$1.watch,
+        className: s$2.watch,
         onMouseEnter,
         onMouseLeave,
         children: [
@@ -10513,13 +10513,13 @@ const Clock = () => {
         ]
       }
     ),
-    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { id: "hw9-more", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$1.more, children: show ? /* @__PURE__ */ jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { id: "hw9-more", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$2.more, children: show ? /* @__PURE__ */ jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx("span", { id: "hw9-month", children: stringMonth }),
       ",",
       " ",
       /* @__PURE__ */ jsxRuntimeExports.jsx("span", { id: "hw9-date", children: stringDate })
     ] }) : /* @__PURE__ */ jsxRuntimeExports.jsx(jsxRuntimeExports.Fragment, { children: /* @__PURE__ */ jsxRuntimeExports.jsx("br", {}) }) }) }),
-    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$1.buttonsContainer, children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: s$2.buttonsContainer, children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx(
         SuperButton,
         {
@@ -10543,8 +10543,8 @@ const Clock = () => {
 };
 const HW9 = () => {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw9", children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$k.hwTitle, children: "Homework #9" }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$k.hw, children: /* @__PURE__ */ jsxRuntimeExports.jsx(Clock, {}) })
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$l.hwTitle, children: "Homework #9" }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$l.hw, children: /* @__PURE__ */ jsxRuntimeExports.jsx(Clock, {}) })
   ] });
 };
 function Junior() {
@@ -10555,8 +10555,813 @@ function Junior() {
     /* @__PURE__ */ jsxRuntimeExports.jsx(HW9, {})
   ] });
 }
+const initState$1 = {
+  isLoading: false
+};
+const loadingReducer = (state = initState$1, action) => {
+  switch (action.type) {
+    // пишет студент  // need to fix
+    case "CHANGE_LOADING": {
+      return { isLoading: action.isLoading };
+    }
+    default:
+      return state;
+  }
+};
+const loadingAC = (isLoading) => ({
+  type: "CHANGE_LOADING",
+  isLoading
+});
+function formatProdErrorMessage$1(code) {
+  return `Minified Redux error #${code}; visit https://redux.js.org/Errors?code=${code} for the full message or use the non-minified dev environment for full errors. `;
+}
+var $$observable = /* @__PURE__ */ (() => typeof Symbol === "function" && Symbol.observable || "@@observable")();
+var symbol_observable_default = $$observable;
+var randomString = () => Math.random().toString(36).substring(7).split("").join(".");
+var ActionTypes = {
+  INIT: `@@redux/INIT${/* @__PURE__ */ randomString()}`,
+  REPLACE: `@@redux/REPLACE${/* @__PURE__ */ randomString()}`,
+  PROBE_UNKNOWN_ACTION: () => `@@redux/PROBE_UNKNOWN_ACTION${randomString()}`
+};
+var actionTypes_default = ActionTypes;
+function isPlainObject(obj) {
+  if (typeof obj !== "object" || obj === null)
+    return false;
+  let proto = obj;
+  while (Object.getPrototypeOf(proto) !== null) {
+    proto = Object.getPrototypeOf(proto);
+  }
+  return Object.getPrototypeOf(obj) === proto || Object.getPrototypeOf(obj) === null;
+}
+function createStore(reducer, preloadedState, enhancer) {
+  if (typeof reducer !== "function") {
+    throw new Error(formatProdErrorMessage$1(2));
+  }
+  if (typeof preloadedState === "function" && typeof enhancer === "function" || typeof enhancer === "function" && typeof arguments[3] === "function") {
+    throw new Error(formatProdErrorMessage$1(0));
+  }
+  if (typeof preloadedState === "function" && typeof enhancer === "undefined") {
+    enhancer = preloadedState;
+    preloadedState = void 0;
+  }
+  if (typeof enhancer !== "undefined") {
+    if (typeof enhancer !== "function") {
+      throw new Error(formatProdErrorMessage$1(1));
+    }
+    return enhancer(createStore)(reducer, preloadedState);
+  }
+  let currentReducer = reducer;
+  let currentState = preloadedState;
+  let currentListeners = /* @__PURE__ */ new Map();
+  let nextListeners = currentListeners;
+  let listenerIdCounter = 0;
+  let isDispatching = false;
+  function ensureCanMutateNextListeners() {
+    if (nextListeners === currentListeners) {
+      nextListeners = /* @__PURE__ */ new Map();
+      currentListeners.forEach((listener, key) => {
+        nextListeners.set(key, listener);
+      });
+    }
+  }
+  function getState() {
+    if (isDispatching) {
+      throw new Error(formatProdErrorMessage$1(3));
+    }
+    return currentState;
+  }
+  function subscribe(listener) {
+    if (typeof listener !== "function") {
+      throw new Error(formatProdErrorMessage$1(4));
+    }
+    if (isDispatching) {
+      throw new Error(formatProdErrorMessage$1(5));
+    }
+    let isSubscribed = true;
+    ensureCanMutateNextListeners();
+    const listenerId = listenerIdCounter++;
+    nextListeners.set(listenerId, listener);
+    return function unsubscribe() {
+      if (!isSubscribed) {
+        return;
+      }
+      if (isDispatching) {
+        throw new Error(formatProdErrorMessage$1(6));
+      }
+      isSubscribed = false;
+      ensureCanMutateNextListeners();
+      nextListeners.delete(listenerId);
+      currentListeners = null;
+    };
+  }
+  function dispatch(action) {
+    if (!isPlainObject(action)) {
+      throw new Error(formatProdErrorMessage$1(7));
+    }
+    if (typeof action.type === "undefined") {
+      throw new Error(formatProdErrorMessage$1(8));
+    }
+    if (typeof action.type !== "string") {
+      throw new Error(formatProdErrorMessage$1(17));
+    }
+    if (isDispatching) {
+      throw new Error(formatProdErrorMessage$1(9));
+    }
+    try {
+      isDispatching = true;
+      currentState = currentReducer(currentState, action);
+    } finally {
+      isDispatching = false;
+    }
+    const listeners = currentListeners = nextListeners;
+    listeners.forEach((listener) => {
+      listener();
+    });
+    return action;
+  }
+  function replaceReducer(nextReducer) {
+    if (typeof nextReducer !== "function") {
+      throw new Error(formatProdErrorMessage$1(10));
+    }
+    currentReducer = nextReducer;
+    dispatch({
+      type: actionTypes_default.REPLACE
+    });
+  }
+  function observable() {
+    const outerSubscribe = subscribe;
+    return {
+      /**
+       * The minimal observable subscription method.
+       * @param observer Any object that can be used as an observer.
+       * The observer object should have a `next` method.
+       * @returns An object with an `unsubscribe` method that can
+       * be used to unsubscribe the observable from the store, and prevent further
+       * emission of values from the observable.
+       */
+      subscribe(observer) {
+        if (typeof observer !== "object" || observer === null) {
+          throw new Error(formatProdErrorMessage$1(11));
+        }
+        function observeState() {
+          const observerAsObserver = observer;
+          if (observerAsObserver.next) {
+            observerAsObserver.next(getState());
+          }
+        }
+        observeState();
+        const unsubscribe = outerSubscribe(observeState);
+        return {
+          unsubscribe
+        };
+      },
+      [symbol_observable_default]() {
+        return this;
+      }
+    };
+  }
+  dispatch({
+    type: actionTypes_default.INIT
+  });
+  const store2 = {
+    dispatch,
+    subscribe,
+    getState,
+    replaceReducer,
+    [symbol_observable_default]: observable
+  };
+  return store2;
+}
+function assertReducerShape(reducers) {
+  Object.keys(reducers).forEach((key) => {
+    const reducer = reducers[key];
+    const initialState = reducer(void 0, {
+      type: actionTypes_default.INIT
+    });
+    if (typeof initialState === "undefined") {
+      throw new Error(formatProdErrorMessage$1(12));
+    }
+    if (typeof reducer(void 0, {
+      type: actionTypes_default.PROBE_UNKNOWN_ACTION()
+    }) === "undefined") {
+      throw new Error(formatProdErrorMessage$1(13));
+    }
+  });
+}
+function combineReducers(reducers) {
+  const reducerKeys = Object.keys(reducers);
+  const finalReducers = {};
+  for (let i = 0; i < reducerKeys.length; i++) {
+    const key = reducerKeys[i];
+    if (typeof reducers[key] === "function") {
+      finalReducers[key] = reducers[key];
+    }
+  }
+  const finalReducerKeys = Object.keys(finalReducers);
+  let shapeAssertionError;
+  try {
+    assertReducerShape(finalReducers);
+  } catch (e) {
+    shapeAssertionError = e;
+  }
+  return function combination(state = {}, action) {
+    if (shapeAssertionError) {
+      throw shapeAssertionError;
+    }
+    let hasChanged = false;
+    const nextState = {};
+    for (let i = 0; i < finalReducerKeys.length; i++) {
+      const key = finalReducerKeys[i];
+      const reducer = finalReducers[key];
+      const previousStateForKey = state[key];
+      const nextStateForKey = reducer(previousStateForKey, action);
+      if (typeof nextStateForKey === "undefined") {
+        action && action.type;
+        throw new Error(formatProdErrorMessage$1(14));
+      }
+      nextState[key] = nextStateForKey;
+      hasChanged = hasChanged || nextStateForKey !== previousStateForKey;
+    }
+    hasChanged = hasChanged || finalReducerKeys.length !== Object.keys(state).length;
+    return hasChanged ? nextState : state;
+  };
+}
+function compose(...funcs) {
+  if (funcs.length === 0) {
+    return (arg) => arg;
+  }
+  if (funcs.length === 1) {
+    return funcs[0];
+  }
+  return funcs.reduce((a, b) => (...args) => a(b(...args)));
+}
+function applyMiddleware(...middlewares) {
+  return (createStore2) => (reducer, preloadedState) => {
+    const store2 = createStore2(reducer, preloadedState);
+    let dispatch = () => {
+      throw new Error(formatProdErrorMessage$1(15));
+    };
+    const middlewareAPI = {
+      getState: store2.getState,
+      dispatch: (action, ...args) => dispatch(action, ...args)
+    };
+    const chain = middlewares.map((middleware) => middleware(middlewareAPI));
+    dispatch = compose(...chain)(store2.dispatch);
+    return {
+      ...store2,
+      dispatch
+    };
+  };
+}
+function createThunkMiddleware(extraArgument) {
+  const middleware = ({ dispatch, getState }) => (next) => (action) => {
+    if (typeof action === "function") {
+      return action(dispatch, getState, extraArgument);
+    }
+    return next(action);
+  };
+  return middleware;
+}
+var thunk = createThunkMiddleware();
+var withExtraArgument = createThunkMiddleware;
+var composeWithDevTools = typeof window !== "undefined" && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ : function() {
+  if (arguments.length === 0) return void 0;
+  if (typeof arguments[0] === "object") return compose;
+  return compose.apply(null, arguments);
+};
+var Tuple = class _Tuple extends Array {
+  constructor(...items) {
+    super(...items);
+    Object.setPrototypeOf(this, _Tuple.prototype);
+  }
+  static get [Symbol.species]() {
+    return _Tuple;
+  }
+  concat(...arr2) {
+    return super.concat.apply(this, arr2);
+  }
+  prepend(...arr2) {
+    if (arr2.length === 1 && Array.isArray(arr2[0])) {
+      return new _Tuple(...arr2[0].concat(this));
+    }
+    return new _Tuple(...arr2.concat(this));
+  }
+};
+function isBoolean(x) {
+  return typeof x === "boolean";
+}
+var buildGetDefaultMiddleware = () => function getDefaultMiddleware(options2) {
+  const {
+    thunk: thunk$1 = true,
+    immutableCheck = true,
+    serializableCheck = true,
+    actionCreatorCheck = true
+  } = options2 ?? {};
+  let middlewareArray = new Tuple();
+  if (thunk$1) {
+    if (isBoolean(thunk$1)) {
+      middlewareArray.push(thunk);
+    } else {
+      middlewareArray.push(withExtraArgument(thunk$1.extraArgument));
+    }
+  }
+  return middlewareArray;
+};
+var SHOULD_AUTOBATCH = "RTK_autoBatch";
+var createQueueWithTimer = (timeout) => {
+  return (notify) => {
+    setTimeout(notify, timeout);
+  };
+};
+var autoBatchEnhancer = (options2 = {
+  type: "raf"
+}) => (next) => (...args) => {
+  const store2 = next(...args);
+  let notifying = true;
+  let shouldNotifyAtEndOfTick = false;
+  let notificationQueued = false;
+  const listeners = /* @__PURE__ */ new Set();
+  const queueCallback = options2.type === "tick" ? queueMicrotask : options2.type === "raf" ? (
+    // requestAnimationFrame won't exist in SSR environments. Fall back to a vague approximation just to keep from erroring.
+    typeof window !== "undefined" && window.requestAnimationFrame ? window.requestAnimationFrame : createQueueWithTimer(10)
+  ) : options2.type === "callback" ? options2.queueNotification : createQueueWithTimer(options2.timeout);
+  const notifyListeners = () => {
+    notificationQueued = false;
+    if (shouldNotifyAtEndOfTick) {
+      shouldNotifyAtEndOfTick = false;
+      listeners.forEach((l) => l());
+    }
+  };
+  return Object.assign({}, store2, {
+    // Override the base `store.subscribe` method to keep original listeners
+    // from running if we're delaying notifications
+    subscribe(listener2) {
+      const wrappedListener = () => notifying && listener2();
+      const unsubscribe = store2.subscribe(wrappedListener);
+      listeners.add(listener2);
+      return () => {
+        unsubscribe();
+        listeners.delete(listener2);
+      };
+    },
+    // Override the base `store.dispatch` method so that we can check actions
+    // for the `shouldAutoBatch` flag and determine if batching is active
+    dispatch(action) {
+      var _a;
+      try {
+        notifying = !((_a = action == null ? void 0 : action.meta) == null ? void 0 : _a[SHOULD_AUTOBATCH]);
+        shouldNotifyAtEndOfTick = !notifying;
+        if (shouldNotifyAtEndOfTick) {
+          if (!notificationQueued) {
+            notificationQueued = true;
+            queueCallback(notifyListeners);
+          }
+        }
+        return store2.dispatch(action);
+      } finally {
+        notifying = true;
+      }
+    }
+  });
+};
+var buildGetDefaultEnhancers = (middlewareEnhancer) => function getDefaultEnhancers(options2) {
+  const {
+    autoBatch = true
+  } = options2 ?? {};
+  let enhancerArray = new Tuple(middlewareEnhancer);
+  if (autoBatch) {
+    enhancerArray.push(autoBatchEnhancer(typeof autoBatch === "object" ? autoBatch : void 0));
+  }
+  return enhancerArray;
+};
+function configureStore(options2) {
+  const getDefaultMiddleware = buildGetDefaultMiddleware();
+  const {
+    reducer = void 0,
+    middleware,
+    devTools = true,
+    duplicateMiddlewareCheck = true,
+    preloadedState = void 0,
+    enhancers = void 0
+  } = options2;
+  let rootReducer2;
+  if (typeof reducer === "function") {
+    rootReducer2 = reducer;
+  } else if (isPlainObject(reducer)) {
+    rootReducer2 = combineReducers(reducer);
+  } else {
+    throw new Error(formatProdErrorMessage(1));
+  }
+  let finalMiddleware;
+  if (typeof middleware === "function") {
+    finalMiddleware = middleware(getDefaultMiddleware);
+  } else {
+    finalMiddleware = getDefaultMiddleware();
+  }
+  let finalCompose = compose;
+  if (devTools) {
+    finalCompose = composeWithDevTools({
+      // Enable capture of stack traces for dispatched Redux actions
+      trace: false,
+      ...typeof devTools === "object" && devTools
+    });
+  }
+  const middlewareEnhancer = applyMiddleware(...finalMiddleware);
+  const getDefaultEnhancers = buildGetDefaultEnhancers(middlewareEnhancer);
+  let storeEnhancers = typeof enhancers === "function" ? enhancers(getDefaultEnhancers) : getDefaultEnhancers();
+  const composedEnhancer = finalCompose(...storeEnhancers);
+  return createStore(rootReducer2, preloadedState, composedEnhancer);
+}
+function formatProdErrorMessage(code) {
+  return `Minified Redux Toolkit error #${code}; visit https://redux-toolkit.js.org/Errors?code=${code} for the full message or use the non-minified dev environment for full errors. `;
+}
+const initState = {
+  themeId: 1
+};
+const themeReducer = (state = initState, action) => {
+  switch (action.type) {
+    // дописать
+    default:
+      return state;
+  }
+};
+var withSelector = { exports: {} };
+var useSyncExternalStoreWithSelector_production = {};
+/**
+ * @license React
+ * use-sync-external-store-with-selector.production.js
+ *
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+var hasRequiredUseSyncExternalStoreWithSelector_production;
+function requireUseSyncExternalStoreWithSelector_production() {
+  if (hasRequiredUseSyncExternalStoreWithSelector_production) return useSyncExternalStoreWithSelector_production;
+  hasRequiredUseSyncExternalStoreWithSelector_production = 1;
+  var React = requireReact();
+  function is(x, y) {
+    return x === y && (0 !== x || 1 / x === 1 / y) || x !== x && y !== y;
+  }
+  var objectIs = "function" === typeof Object.is ? Object.is : is, useSyncExternalStore = React.useSyncExternalStore, useRef = React.useRef, useEffect = React.useEffect, useMemo = React.useMemo, useDebugValue = React.useDebugValue;
+  useSyncExternalStoreWithSelector_production.useSyncExternalStoreWithSelector = function(subscribe, getSnapshot, getServerSnapshot, selector, isEqual) {
+    var instRef = useRef(null);
+    if (null === instRef.current) {
+      var inst = { hasValue: false, value: null };
+      instRef.current = inst;
+    } else inst = instRef.current;
+    instRef = useMemo(
+      function() {
+        function memoizedSelector(nextSnapshot) {
+          if (!hasMemo) {
+            hasMemo = true;
+            memoizedSnapshot = nextSnapshot;
+            nextSnapshot = selector(nextSnapshot);
+            if (void 0 !== isEqual && inst.hasValue) {
+              var currentSelection = inst.value;
+              if (isEqual(currentSelection, nextSnapshot))
+                return memoizedSelection = currentSelection;
+            }
+            return memoizedSelection = nextSnapshot;
+          }
+          currentSelection = memoizedSelection;
+          if (objectIs(memoizedSnapshot, nextSnapshot)) return currentSelection;
+          var nextSelection = selector(nextSnapshot);
+          if (void 0 !== isEqual && isEqual(currentSelection, nextSelection))
+            return memoizedSnapshot = nextSnapshot, currentSelection;
+          memoizedSnapshot = nextSnapshot;
+          return memoizedSelection = nextSelection;
+        }
+        var hasMemo = false, memoizedSnapshot, memoizedSelection, maybeGetServerSnapshot = void 0 === getServerSnapshot ? null : getServerSnapshot;
+        return [
+          function() {
+            return memoizedSelector(getSnapshot());
+          },
+          null === maybeGetServerSnapshot ? void 0 : function() {
+            return memoizedSelector(maybeGetServerSnapshot());
+          }
+        ];
+      },
+      [getSnapshot, getServerSnapshot, selector, isEqual]
+    );
+    var value = useSyncExternalStore(subscribe, instRef[0], instRef[1]);
+    useEffect(
+      function() {
+        inst.hasValue = true;
+        inst.value = value;
+      },
+      [value]
+    );
+    useDebugValue(value);
+    return value;
+  };
+  return useSyncExternalStoreWithSelector_production;
+}
+var hasRequiredWithSelector;
+function requireWithSelector() {
+  if (hasRequiredWithSelector) return withSelector.exports;
+  hasRequiredWithSelector = 1;
+  {
+    withSelector.exports = requireUseSyncExternalStoreWithSelector_production();
+  }
+  return withSelector.exports;
+}
+var withSelectorExports = requireWithSelector();
+function defaultNoopBatch(callback) {
+  callback();
+}
+function createListenerCollection() {
+  let first = null;
+  let last = null;
+  return {
+    clear() {
+      first = null;
+      last = null;
+    },
+    notify() {
+      defaultNoopBatch(() => {
+        let listener = first;
+        while (listener) {
+          listener.callback();
+          listener = listener.next;
+        }
+      });
+    },
+    get() {
+      const listeners = [];
+      let listener = first;
+      while (listener) {
+        listeners.push(listener);
+        listener = listener.next;
+      }
+      return listeners;
+    },
+    subscribe(callback) {
+      let isSubscribed = true;
+      const listener = last = {
+        callback,
+        next: null,
+        prev: last
+      };
+      if (listener.prev) {
+        listener.prev.next = listener;
+      } else {
+        first = listener;
+      }
+      return function unsubscribe() {
+        if (!isSubscribed || first === null) return;
+        isSubscribed = false;
+        if (listener.next) {
+          listener.next.prev = listener.prev;
+        } else {
+          last = listener.prev;
+        }
+        if (listener.prev) {
+          listener.prev.next = listener.next;
+        } else {
+          first = listener.next;
+        }
+      };
+    }
+  };
+}
+var nullListeners = {
+  notify() {
+  },
+  get: () => []
+};
+function createSubscription(store2, parentSub) {
+  let unsubscribe;
+  let listeners = nullListeners;
+  let subscriptionsAmount = 0;
+  let selfSubscribed = false;
+  function addNestedSub(listener) {
+    trySubscribe();
+    const cleanupListener = listeners.subscribe(listener);
+    let removed = false;
+    return () => {
+      if (!removed) {
+        removed = true;
+        cleanupListener();
+        tryUnsubscribe();
+      }
+    };
+  }
+  function notifyNestedSubs() {
+    listeners.notify();
+  }
+  function handleChangeWrapper() {
+    if (subscription.onStateChange) {
+      subscription.onStateChange();
+    }
+  }
+  function isSubscribed() {
+    return selfSubscribed;
+  }
+  function trySubscribe() {
+    subscriptionsAmount++;
+    if (!unsubscribe) {
+      unsubscribe = store2.subscribe(handleChangeWrapper);
+      listeners = createListenerCollection();
+    }
+  }
+  function tryUnsubscribe() {
+    subscriptionsAmount--;
+    if (unsubscribe && subscriptionsAmount === 0) {
+      unsubscribe();
+      unsubscribe = void 0;
+      listeners.clear();
+      listeners = nullListeners;
+    }
+  }
+  function trySubscribeSelf() {
+    if (!selfSubscribed) {
+      selfSubscribed = true;
+      trySubscribe();
+    }
+  }
+  function tryUnsubscribeSelf() {
+    if (selfSubscribed) {
+      selfSubscribed = false;
+      tryUnsubscribe();
+    }
+  }
+  const subscription = {
+    addNestedSub,
+    notifyNestedSubs,
+    handleChangeWrapper,
+    isSubscribed,
+    trySubscribe: trySubscribeSelf,
+    tryUnsubscribe: tryUnsubscribeSelf,
+    getListeners: () => listeners
+  };
+  return subscription;
+}
+var canUseDOM = () => !!(typeof window !== "undefined" && typeof window.document !== "undefined" && typeof window.document.createElement !== "undefined");
+var isDOM = /* @__PURE__ */ canUseDOM();
+var isRunningInReactNative = () => typeof navigator !== "undefined" && navigator.product === "ReactNative";
+var isReactNative = /* @__PURE__ */ isRunningInReactNative();
+var getUseIsomorphicLayoutEffect = () => isDOM || isReactNative ? reactExports.useLayoutEffect : reactExports.useEffect;
+var useIsomorphicLayoutEffect = /* @__PURE__ */ getUseIsomorphicLayoutEffect();
+var ContextKey = /* @__PURE__ */ Symbol.for(`react-redux-context`);
+var gT = typeof globalThis !== "undefined" ? globalThis : (
+  /* fall back to a per-module scope (pre-8.1 behaviour) if `globalThis` is not available */
+  {}
+);
+function getContext() {
+  if (!reactExports.createContext) return {};
+  const contextMap = gT[ContextKey] ?? (gT[ContextKey] = /* @__PURE__ */ new Map());
+  let realContext = contextMap.get(reactExports.createContext);
+  if (!realContext) {
+    realContext = reactExports.createContext(
+      null
+    );
+    contextMap.set(reactExports.createContext, realContext);
+  }
+  return realContext;
+}
+var ReactReduxContext = /* @__PURE__ */ getContext();
+function Provider(providerProps) {
+  const { children, context, serverState, store: store2 } = providerProps;
+  const contextValue = reactExports.useMemo(() => {
+    const subscription = createSubscription(store2);
+    const baseContextValue = {
+      store: store2,
+      subscription,
+      getServerState: serverState ? () => serverState : void 0
+    };
+    {
+      return baseContextValue;
+    }
+  }, [store2, serverState]);
+  const previousState = reactExports.useMemo(() => store2.getState(), [store2]);
+  useIsomorphicLayoutEffect(() => {
+    const { subscription } = contextValue;
+    subscription.onStateChange = subscription.notifyNestedSubs;
+    subscription.trySubscribe();
+    if (previousState !== store2.getState()) {
+      subscription.notifyNestedSubs();
+    }
+    return () => {
+      subscription.tryUnsubscribe();
+      subscription.onStateChange = void 0;
+    };
+  }, [contextValue, previousState]);
+  const Context = context || ReactReduxContext;
+  return /* @__PURE__ */ reactExports.createElement(Context.Provider, { value: contextValue }, children);
+}
+var Provider_default = Provider;
+function createReduxContextHook(context = ReactReduxContext) {
+  return function useReduxContext2() {
+    const contextValue = reactExports.useContext(context);
+    return contextValue;
+  };
+}
+var useReduxContext = /* @__PURE__ */ createReduxContextHook();
+function createStoreHook(context = ReactReduxContext) {
+  const useReduxContext2 = context === ReactReduxContext ? useReduxContext : (
+    // @ts-ignore
+    createReduxContextHook(context)
+  );
+  const useStore2 = () => {
+    const { store: store2 } = useReduxContext2();
+    return store2;
+  };
+  Object.assign(useStore2, {
+    withTypes: () => useStore2
+  });
+  return useStore2;
+}
+var useStore = /* @__PURE__ */ createStoreHook();
+function createDispatchHook(context = ReactReduxContext) {
+  const useStore2 = context === ReactReduxContext ? useStore : createStoreHook(context);
+  const useDispatch2 = () => {
+    const store2 = useStore2();
+    return store2.dispatch;
+  };
+  Object.assign(useDispatch2, {
+    withTypes: () => useDispatch2
+  });
+  return useDispatch2;
+}
+var useDispatch = /* @__PURE__ */ createDispatchHook();
+var refEquality = (a, b) => a === b;
+function createSelectorHook(context = ReactReduxContext) {
+  const useReduxContext2 = context === ReactReduxContext ? useReduxContext : createReduxContextHook(context);
+  const useSelector2 = (selector, equalityFnOrOptions = {}) => {
+    const { equalityFn = refEquality } = typeof equalityFnOrOptions === "function" ? { equalityFn: equalityFnOrOptions } : equalityFnOrOptions;
+    const reduxContext = useReduxContext2();
+    const { store: store2, subscription, getServerState } = reduxContext;
+    reactExports.useRef(true);
+    const wrappedSelector = reactExports.useCallback(
+      {
+        [selector.name](state) {
+          const selected = selector(state);
+          return selected;
+        }
+      }[selector.name],
+      [selector]
+    );
+    const selectedState = withSelectorExports.useSyncExternalStoreWithSelector(
+      subscription.addNestedSub,
+      store2.getState,
+      getServerState || store2.getState,
+      wrappedSelector,
+      equalityFn
+    );
+    reactExports.useDebugValue(selectedState);
+    return selectedState;
+  };
+  Object.assign(useSelector2, {
+    withTypes: () => useSelector2
+  });
+  return useSelector2;
+}
+var useSelector = /* @__PURE__ */ createSelectorHook();
+const rootReducer = combineReducers({
+  loading: loadingReducer,
+  // hw10
+  theme: themeReducer
+  // hw12
+});
+const store = configureStore({
+  reducer: rootReducer
+});
+const useAppDispatch = useDispatch.withTypes();
+const useAppSelector = useSelector.withTypes();
+const selectIsLoading = (state) => state.loading.isLoading;
+window.store = store;
+const loader = "_loader_18ht1_2";
+const l3 = "_l3_18ht1_1";
+const s$1 = {
+  loader,
+  l3
+};
+const Loader = () => /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$1.loader });
+const HW10 = () => {
+  const isLoading = useAppSelector(selectIsLoading);
+  const dispatch = useAppDispatch();
+  const setLoading = () => {
+    dispatch(loadingAC(true));
+    setTimeout(() => {
+      dispatch(loadingAC(false));
+    }, 1500);
+  };
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw10", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$l.hwTitle, children: "Homework #10" }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$l.hw, children: isLoading ? /* @__PURE__ */ jsxRuntimeExports.jsx("div", { id: "hw10-loading", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Loader, {}) }) : /* @__PURE__ */ jsxRuntimeExports.jsx(
+      SuperButton,
+      {
+        id: "hw10-button-start-loading",
+        onClick: setLoading,
+        children: "Set loading..."
+      }
+    ) })
+  ] });
+};
 function JuniorPlus() {
-  return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { id: "hw5-page-junior-plus" });
+  return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { id: "hw5-page-junior-plus", children: /* @__PURE__ */ jsxRuntimeExports.jsx(HW10, {}) });
 }
 const PATH = {
   PRE_JUNIOR: "/pre-junior",
@@ -10576,13 +11381,13 @@ const Header = ({ handleOpen }) => {
   const location = useLocation();
   const currentPath = location.pathname;
   const pageName = currentPath === PATH.PRE_JUNIOR ? "Pre-junior" : currentPath === PATH.JUNIOR ? "Junior" : currentPath === PATH.JUNIOR_PLUS ? "Junior Plus" : "Error";
-  return /* @__PURE__ */ jsxRuntimeExports.jsx(jsxRuntimeExports.Fragment, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw5-header", className: s$j.header, children: [
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(jsxRuntimeExports.Fragment, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "hw5-header", className: s$k.header, children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx(
       "img",
       {
         src: burgerIcon,
         id: "hw5-burger-menu",
-        className: s$j.burgerMenuIcon,
+        className: s$k.burgerMenuIcon,
         onClick: handleOpen,
         alt: "open menu"
       }
@@ -10665,9 +11470,9 @@ function HW5() {
   return /* @__PURE__ */ jsxRuntimeExports.jsx(HashRouter, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(Layout, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(Pages, {}) }) });
 }
 function App() {
-  return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$k.App, children: /* @__PURE__ */ jsxRuntimeExports.jsx(HW5, {}) });
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(Provider_default, { store, children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: s$l.App, children: /* @__PURE__ */ jsxRuntimeExports.jsx(HW5, {}) }) });
 }
 clientExports.createRoot(document.getElementById("root")).render(
   /* @__PURE__ */ jsxRuntimeExports.jsx(jsxRuntimeExports.Fragment, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(App, {}) })
 );
-//# sourceMappingURL=index-nH9HfPWG.js.map
+//# sourceMappingURL=index-BQDp0gkD.js.map

@@ -78,7 +78,7 @@ button:focus-visible {
   }
 } */
 
-._App_1td2w_4 {
+._App_1k9o1_4 {
   --header_height: 60px;
   /* --header_height: 142px; */
   --color_primary: #0066CC;
@@ -106,20 +106,22 @@ button:focus-visible {
     margin-bottom: 85px;
   }
 }
-._hw_1td2w_33 {
+._hw_1k9o1_33 {
   border-top: 1px solid #D9D9D9;
   border-bottom: 1px solid #D9D9D9;
   padding: 24px 0 32px;
   margin-bottom: 85px;
+  min-height: 400px;
 }
-._hwTitle_1td2w_40 {
+._hwTitle_1k9o1_41 {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
   font-size: 22px;
   line-height: 27px;
   color: #000000;
-}._burgerMenuIcon_1imfc_1 {
+}
+._burgerMenuIcon_1imfc_1 {
   display: block;
   width: 24px;
   height: 24px;
@@ -849,6 +851,28 @@ button:focus-visible {
   display: flex;
   gap: 20px;
 }
+/* HTML: <div class="loader"></div> */
+._loader_18ht1_2 {
+  width: 50px;
+  padding: 8px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #3C4241;
+  --_m: conic-gradient(#0000 10%, #000000),
+  linear-gradient(#000000 0 0) content-box;
+  -webkit-mask: var(--_m);
+  mask: var(--_m);
+  -webkit-mask-composite: source-out;
+  mask-composite: subtract;
+  animation: _l3_18ht1_1 1s infinite linear;
+}
+
+@keyframes _l3_18ht1_1 {
+  to {
+    transform: rotate(1turn)
+  }
+}
+
 ._sidebar_ptiyk_1 {
   display: none;
   width: 320px;
