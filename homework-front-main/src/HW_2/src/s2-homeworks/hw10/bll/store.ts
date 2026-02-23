@@ -1,17 +1,24 @@
 import { loadingReducer } from './loadingReducer'
-import { combineReducers, legacy_createStore } from 'redux'
+import { combineReducers, configureStore } from '@reduxjs/toolkit'
 import { themeReducer } from '../../hw12/bll/themeReducer'
+import { useDispatch, useSelector } from 'react-redux';
 
-const reducers = combineReducers({
-    loading: loadingReducer, // hw10
-    theme: themeReducer, // hw12
+const rootReducer = combineReducers({
+  loading: loadingReducer, // hw10
+  theme: themeReducer, // hw12
 })
 
-const store = legacy_createStore(reducers)
+export const store = configureStore({
+  reducer: rootReducer,
+})
 
-export default store
+export type RootState = ReturnType<typeof store.getState>
+export type AppDispatch = typeof store.dispatch
 
-export type AppStoreType = ReturnType<typeof reducers>
+export const useAppDispatch = useDispatch.withTypes<AppDispatch>()
+export const useAppSelector = useSelector.withTypes<RootState>()
+
+export const selectIsLoading = (state: RootState): boolean => state.loading.isLoading
 
 // @ts-ignore
 window.store = store // for dev // для того чтобы автотесты видели состояние данных
