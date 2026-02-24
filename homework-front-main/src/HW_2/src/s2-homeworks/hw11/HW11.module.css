@@ -1,8 +1,19 @@
 .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 70px;
 }
 
 .wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .number {
+  font-weight: 600;
+  font-size: 16px;
+  min-width: 2rem;
+  text-align: center;
 }
