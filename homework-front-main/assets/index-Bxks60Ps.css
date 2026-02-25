@@ -873,6 +873,25 @@ button:focus-visible {
   }
 }
 
+._container_1465l_1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 70px;
+}
+
+._wrapper_1465l_8 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+._number_1465l_14 {
+  font-weight: 600;
+  font-size: 16px;
+  min-width: 2rem;
+  text-align: center;
+}
 ._sidebar_ptiyk_1 {
   display: none;
   width: 320px;
