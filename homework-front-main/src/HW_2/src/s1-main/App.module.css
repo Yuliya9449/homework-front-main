@@ -14,14 +14,14 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: #000000;
+  /* color: #000000; */
 
   max-width: 1180px;
   width: 100%;
   margin: 0 auto;
 
   /* padding: 0 70px; */
-  background: #FFFFFF;
+  /* background: #FFFFFF; */
   min-height: 100vw;
 
   & > * {
@@ -44,5 +44,5 @@
   font-weight: 600;
   font-size: 22px;
   line-height: 27px;
-  color: #000000;
+  /* color: #000000; */
 }

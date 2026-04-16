@@ -19,6 +19,7 @@ export const useAppDispatch = useDispatch.withTypes<AppDispatch>()
 export const useAppSelector = useSelector.withTypes<RootState>()
 
 export const selectIsLoading = (state: RootState): boolean => state.loading.isLoading
+export const selectThemeId = (state: RootState): number => state.theme.themeId
 
 // @ts-ignore
 window.store = store // for dev // для того чтобы автотесты видели состояние данных
