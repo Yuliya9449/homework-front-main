@@ -1,27 +1,47 @@
 .tech {
-    width: 50vw;
-}
-
-.developer {
-
+  width: 50vw;
 }
 
 .techHeader {
-    width: 50vw;
+  width: 50vw;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.developer {
+  width: 55%;
 }
 
 .developerHeader {
-
+  width: 55%;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 .row {
-    display: flex;
+  display: flex;
+  align-items: center;
+  background: #FFFFFF;
+  padding: 18px 20px;
+  border-bottom: 1px solid #E6E6E6;
 }
 
 .rowHeader {
-    display: flex;
+  display: flex;
+  align-items: center;
+  background: #E0E0E0;
+  font-weight: 600;
+  padding: 12px 20px;
+  margin-top: 40px;
+  border-radius: 2px;
 }
 
 .loading {
-
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

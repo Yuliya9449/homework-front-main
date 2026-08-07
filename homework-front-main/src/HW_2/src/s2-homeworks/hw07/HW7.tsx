@@ -13,7 +13,7 @@ import s from './HW7.module.css';
 
 export type Option = {
   readonly id: number;
-  readonly value: string;
+  readonly value: string | number;
 };
 
 const arr: Option[] = [
